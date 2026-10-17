@@ -1,0 +1,529 @@
+<!DOCTYPE html><html lang="ru" data-theme="dark" data-pref="auto"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"><meta name="theme-color" content="#0f1218"><meta name="description" content="SAFEHOME — A Smart Home That Cares. Team IZB."><meta property="og:title" content="SAFEHOME — A Smart Home That Cares"><meta property="og:description" content="Pose, not faces. Local-first fall detection for elderly people living alone."><meta property="og:type" content="website"><title>SAFEHOME — A Smart Home That Cares</title><link rel="icon" href="data:image/png;base64,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">
+<script>
+/* тема выбирается до первой отрисовки, чтобы не было вспышки */
+(function(){var p='auto';try{p=localStorage.getItem('sh-theme')||'auto'}catch(e){}
+var ok=['auto','dark','light','vivid'];if(ok.indexOf(p)<0)p='auto';var e=p;
+if(p=='auto'){try{e=matchMedia('(prefers-color-scheme: light)').matches?'light':'dark'}catch(x){e='dark'}}
+var d=document.documentElement;d.setAttribute('data-theme',e);d.setAttribute('data-pref',p)})();
+</script>
+<link rel="stylesheet" href="style.css?v=3"></head><body>
+<div id="ld"><div class="lgw" id="lw"></div><div class="ct">000</div><div class="le" id="ldev"></div><div class="ln"></div></div><div id="bar"></div><div id="pv"></div><div class="aur" aria-hidden="true"><i class="a1"></i><i class="a2"></i><i class="a3"></i><i class="a4"></i></div>
+<nav><div class="glass"><a class="brand" href="#top" aria-label="SAFEHOME"><img class="v-d" id="nm" alt=""><img class="v-l" id="nml" alt=""><b>SAFEHOME</b></a><div class="lk"><a href="#problem" data-t="Проблема|Problem"></a><a href="#versions" data-t="Версии|Versions|Versionen"></a><a href="#ai" data-t="ИИ|AI|KI"></a><a href="#system" data-t="Система|System"></a><a href="#plan" data-t="План|Plan|Plan"></a><a href="#story" data-t="История|Story"></a><a href="#physics" data-t="Физика|Physics"></a><a href="#risk" data-t="Риск|Risk"></a><a href="#exp" data-t="Результаты|Results"></a><a href="#team" data-t="Команда|Team"></a></div><div class="lg"><button id="ru" class="on">RU</button><button id="en">EN</button><button id="de">DE</button></div>
+<div class="thw"><button class="th" id="th" aria-label="Theme" aria-haspopup="true" aria-expanded="false"><svg viewBox="0 0 24 24" width="19" height="19"><circle cx="12" cy="12" r="8.5" fill="none" stroke="currentColor" stroke-width="1.5"/><path d="M12 3.5a8.5 8.5 0 0 1 0 17z" fill="currentColor"/></svg></button>
+<div class="tp" id="tp"><button data-th="auto"><i class="sw sw-a"></i><span data-t="Авто (как на устройстве)|Auto (follow device)"></span></button><button data-th="dark"><i class="sw sw-d"></i><span data-t="Тёмная|Dark"></span></button><button data-th="light"><i class="sw sw-l"></i><span data-t="Светлая|Light"></span></button><button data-th="vivid"><i class="sw sw-v"></i><span data-t="Яркая|Vivid"></span></button></div></div>
+<button class="mb" id="mb" aria-label="Menu"><i></i><i></i></button></div></nav>
+<div id="mn"><a href="#problem" data-t="Проблема|Problem"></a><a href="#versions" data-t="Версии|Versions|Versionen"></a><a href="#ai" data-t="ИИ|AI|KI"></a><a href="#system" data-t="Система|System"></a><a href="#plan" data-t="План|Plan|Plan"></a><a href="#story" data-t="История|Story"></a><a href="#physics" data-t="Физика|Physics"></a><a href="#risk" data-t="Риск|Risk"></a><a href="#exp" data-t="Результаты|Results"></a><a href="#team" data-t="Команда|Team"></a></div>
+
+<div id="dots"></div>
+<section class="hero" id="top"><div class="bl b1"></div><div class="bl b2"></div>
+<div class="orb" id="orb" aria-hidden="true"><i class="rgs r1"></i><i class="rgs r2"></i><i class="rgs r3"></i><div class="swp"></div><i class="pgx"></i><i class="pgx b"></i>
+<div class="ob o1"><b><span><i></i>PIR</span></b><b class="bt"><span><i></i>CAMERA</span></b></div>
+<div class="ob o2"><b><span><i></i>mmWave</span></b><b class="bt"><span><i></i>LUX</span></b></div>
+<div class="ob o3"><b><span><i></i>ESP32</span></b></div>
+<div class="core" id="izc"><img id="izb" alt="IZB"><b class="izt">IZB</b></div></div>
+
+<div class="meta"><span id="ev"></span></div>
+<div><h1 class="sp" data-t="Умный дом, <em>который</em> заботится|A smart home <em>that</em> cares"></h1>
+<div class="hb"><div class="hl"><p class="rv" data-t="Интеллектуальная система безопасности и обнаружения падений для пожилых людей. Приватность — по умолчанию.|An intelligent safety and fall-detection system for elderly people. Privacy by default."></p><a class="btn mg rv" href="#story"><span data-t="Смотреть историю|Watch the story"></span> ↓</a></div>
+<div class="lv rv" id="lv"><div class="r1"><span data-t="Статус системы|System status"></span><span>LIVE</span></div><div class="r2"><i class="dot"></i><span id="lvs">NORMAL</span><b id="lvn">8</b></div><div class="rk"><i id="lvb"></i></div><div class="r3"><span id="lvt"></span><span>Risk / 100</span></div></div></div></div>
+<div class="sc"><i></i><span>SCROLL</span></div></section>
+
+<section id="problem"><div class="k rv" data-t="Актуальность|Relevance|Relevanz"></div>
+<h2 class="sp" data-t="Одно падение — <em>и человек один на полу.</em>|One fall — <em>and a person alone on the floor.</em>|Ein Sturz — <em>und ein Mensch allein am Boden.</em>"></h2>
+<div class="v-stats">
+ <div class="v-stat1 rv"><b>&gt; 1 / 4</b><p data-t="людей старше 65 лет падают каждый год|of people over 65 fall every year|der Menschen über 65 stürzen jedes Jahr"></p><small>CDC, USA</small></div>
+ <div class="v-stat1 rv"><b>684 000</b><p data-t="человек в мире ежегодно погибают от падений. Больше всего — люди старше 60 лет|people worldwide die from falls every year. Most of them are over 60|Menschen weltweit sterben jedes Jahr an Stürzen. Die meisten sind über 60"></p><small data-t="ВОЗ, 2021|WHO, 2021|WHO, 2021"></small></div>
+ <div class="v-stat1 rv"><b>34%</b><p data-t="людей старше 65 лет в Германии живут одни. После 85 лет — уже 56%|of people over 65 in Germany live alone. After 85 it is 56%|der Menschen über 65 in Deutschland leben allein. Ab 85 sind es 56 %"></p><small data-t="Destatis, микроперепись 2024|Destatis, Microcensus 2024|Destatis, Mikrozensus 2024"></small></div>
+ <div class="v-stat1 rv"><b>&gt; 1 / 2</b><p data-t="одиноких пожилых людей после падения не могут сами встать или позвать помощь|of older people living alone cannot get up or call for help on their own after a fall|der allein lebenden älteren Menschen können nach einem Sturz nicht selbst aufstehen oder Hilfe rufen"></p><small>BMC Geriatrics, 2022</small></div>
+</div>
+<div class="st scrub" style="margin-top:9vh" data-t="Падение — главная причина травм и потери самостоятельности после 65 лет. Если помощь не приходит в течение часа, риск осложнений растёт в разы. Браслет легко забыть, камеры нарушают приватность, а простые датчики не отличают отдых от беды. А когда человек живёт один, его падение может просто никто не заметить.|A fall is the leading cause of injury and lost independence after 65. If help does not arrive within an hour, the risk of complications multiplies. A bracelet is easily forgotten, cameras invade privacy, and simple sensors cannot tell rest from trouble. And when a person lives alone, nobody may notice the fall at all.|Ein Sturz ist die häufigste Ursache für Verletzungen und verlorene Selbstständigkeit nach 65. Kommt nicht innerhalb einer Stunde Hilfe, steigt das Komplikationsrisiko um ein Vielfaches. Ein Armband wird leicht vergessen, Kameras verletzen die Privatsphäre, und einfache Sensoren unterscheiden Ruhe nicht von Not. Und wer allein lebt, dessen Sturz bemerkt vielleicht niemand."></div>
+</section>
+
+<section id="idea"><div class="k rv" data-t="Наша идея|Our idea|Unsere Idee"></div>
+<h2 class="sp" data-t="Поэтому мы придумали <em>SAFEHOME.</em>|That is why we created <em>SAFEHOME.</em>|Deshalb haben wir <em>SAFEHOME</em> entwickelt."></h2>
+<p class="rv" data-t="Дом, который сам замечает беду и зовёт помощь — даже если человек один и не может дотянуться до телефона. Но квартиры, семьи и бюджеты бывают разные. Поэтому SAFEHOME — не одно устройство, а <b>одна защита в трёх версиях</b>: от маленькой квартиры до умного дома.|A home that notices trouble by itself and calls for help — even when the person is alone and cannot reach the phone. But flats, families and budgets differ. So SAFEHOME is not one device but <b>one protection in three versions</b>: from a small flat to a smart home.|Ein Zuhause, das Not selbst bemerkt und Hilfe ruft — auch wenn der Mensch allein ist und das Telefon nicht erreicht. Aber Wohnungen, Familien und Budgets sind verschieden. Darum ist SAFEHOME nicht ein Gerät, sondern <b>ein Schutz in drei Versionen</b>: von der kleinen Wohnung bis zum Smart Home."></p>
+<div class="v-herofig rv"><svg id="v-heroSvg" viewBox="0 0 960 330" role="img" aria-label="Three houses, one shield"></svg><div class="v-herolab"><span>LITE</span><span>STANDARD</span><span>ELITE</span></div></div>
+<div class="v-princ">
+ <div class="v-pc rv"><i>01</i><h4 data-t="Одна защита для всех|One protection for all|Ein Schutz für alle"></h4><p data-t="Блок безопасности одинаковый в каждой версии. Дешевле — не значит опаснее.|The safety unit is identical in every version. Cheaper does not mean riskier.|Die Sicherheitseinheit ist in jeder Version gleich. Günstiger heißt nicht gefährlicher."></p></div>
+ <div class="v-pc rv"><i>02</i><h4 data-t="Версия под дом и бюджет|A version for every home and budget|Eine Version für jedes Zuhause und Budget"></h4><p data-t="Одна комната, вся квартира или умный дом — выбирает семья.|One room, the whole flat or a smart home — the family chooses.|Ein Raum, die ganze Wohnung oder ein Smart Home — die Familie entscheidet."></p></div>
+ <div class="v-pc rv"><i>03</i><h4 data-t="Свой ИИ, который живёт дома|Our own AI that lives at home|Eigene KI, die zu Hause lebt"></h4><p data-t="Разговаривает, ищет музыку и новости, звонит родным — но не может отключить защиту.|Talks, finds music and news, calls the family — but cannot switch off protection.|Spricht, findet Musik und Nachrichten, ruft die Familie an — kann den Schutz aber nicht abschalten."></p></div>
+</div>
+<div class="nums"><div class="rv"><b data-n="3">0</b><span data-t="версии под разный бюджет|versions for different budgets|Versionen für jedes Budget"></span></div><div class="rv"><b data-n="15">0</b><span data-t="секунд на ответ «Я в порядке»|seconds to answer “I’m fine”|Sekunden für „Mir geht es gut“"></span></div><div class="rv"><b data-n="7">0</b><span data-t="типов датчиков|sensor types|Sensortypen"></span></div><div class="rv"><b data-n="0">0</b><span data-t="видео уходит в облако|video sent to the cloud|Video geht in die Cloud"></span></div></div>
+</section>
+
+<section id="safety" class="vx">
+ <div class="k rv" data-t="Главное правило|The main rule|Die wichtigste Regel"></div>
+ <h2 class="sp" data-t="Безопасность <em>одинаковая</em> во всех версиях.|Safety is <em>the same</em> in every version.|Die Sicherheit ist in jeder Version <em>gleich</em>."></h2>
+ <p class="rv" data-t="Система состоит из двух независимых частей. <b>Блок безопасности</b> замечает падение и зовёт на помощь — он один и тот же в Lite, Standard и Elite. <b>Помощник и удобства</b> — музыка, умный дом, размер охвата — вот здесь версии и отличаются.|The system has two independent parts. The <b>safety unit</b> notices a fall and calls for help — it is identical in Lite, Standard and Elite. The <b>assistant and comfort</b> — music, smart home, coverage — that is where the versions differ.|Das System besteht aus zwei unabhängigen Teilen. Die <b>Sicherheitseinheit</b> erkennt einen Sturz und ruft Hilfe — sie ist in Lite, Standard und Elite identisch. <b>Assistent und Komfort</b> — Musik, Smart Home, Abdeckung — darin unterscheiden sich die Versionen."></p>
+
+ <div class="v-same rv" id="v-same">
+  <div class="v-sp3">
+   <div class="v-mini" data-v="lite"><div class="v-mh"><b>LITE</b><span class="v-ms" data-t="НОРМА|NORMAL|NORMAL"></span></div><svg viewBox="0 0 300 230"></svg><div class="v-smsb" data-t="SMS отправлено|SMS sent|SMS gesendet"></div><ol class="v-ml"></ol></div>
+   <div class="v-mini" data-v="std"><div class="v-mh"><b>STANDARD</b><span class="v-ms" data-t="НОРМА|NORMAL|NORMAL"></span></div><svg viewBox="0 0 300 230"></svg><div class="v-smsb" data-t="SMS отправлено|SMS sent|SMS gesendet"></div><ol class="v-ml"></ol></div>
+   <div class="v-mini" data-v="eli"><div class="v-mh"><b>ELITE</b><span class="v-ms" data-t="НОРМА|NORMAL|NORMAL"></span></div><svg viewBox="0 0 300 230"></svg><div class="v-smsb" data-t="SMS отправлено|SMS sent|SMS gesendet"></div><ol class="v-ml"></ol></div>
+  </div>
+  <p class="v-cap" data-t="Одно и то же падение в трёх версиях. Реакция одинаковая — секунда в секунду. (Анимация ускорена.)|The same fall in three versions. The reaction is identical — second for second. (Animation sped up.)|Derselbe Sturz in drei Versionen. Die Reaktion ist identisch — Sekunde für Sekunde. (Animation beschleunigt.)"></p>
+ </div>
+
+ <h3 class="v-sub rv" data-t="Четыре шага, которые есть в каждой версии|Four steps that every version has|Vier Schritte, die jede Version hat"></h3>
+ <div class="v-steps">
+  <div class="v-st rv"><span>01</span><h4 data-t="Заметил|Noticed|Erkannt"></h4><p data-t="Датчики видят, что человек упал или долго лежит на полу и не двигается.|Sensors see that the person fell or is lying on the floor without moving.|Sensoren sehen, dass die Person gestürzt ist oder reglos am Boden liegt."></p></div>
+  <div class="v-st rv"><span>02</span><h4 data-t="Спросил|Asked|Gefragt"></h4><p data-t="Колонка вслух спрашивает «Вы в порядке?», а браслет вибрирует. Ответить можно голосом или кнопкой на браслете.|The speaker asks out loud “Are you OK?” and the bracelet vibrates. You can answer by voice or with the bracelet button.|Der Lautsprecher fragt laut „Alles in Ordnung?“, das Armband vibriert. Antworten kann man per Stimme oder Armbandtaste."></p></div>
+  <div class="v-st rv"><span>03</span><h4 data-t="Подождал 15 секунд|Waited 15 seconds|15 Sekunden gewartet"></h4><p data-t="Ответил «Я в порядке» — тревога отменяется, семью не беспокоим. Молчание — значит, нужна помощь.|Answered “I'm fine” — the alarm is cancelled, the family is not disturbed. Silence means help is needed.|Antwort „Mir geht es gut“ — Alarm abgebrochen, die Familie wird nicht gestört. Schweigen heißt: Hilfe nötig."></p></div>
+  <div class="v-st rv"><span>04</span><h4 data-t="Позвал на помощь|Called for help|Hilfe gerufen"></h4><p data-t="Сирена и мигающий свет, SMS и звонок родным. Не ответили родные — звонок в скорую.|Siren and flashing light, SMS and a call to the family. If the family does not answer — a call to the ambulance.|Sirene und Blinklicht, SMS und Anruf an die Familie. Meldet sich niemand — Anruf beim Rettungsdienst."></p></div>
+ </div>
+
+ <h3 class="v-sub rv" data-t="Что одинаково в Lite, Standard и Elite|What is identical in Lite, Standard and Elite|Was in Lite, Standard und Elite gleich ist"></h3>
+ <ul class="v-chk rv">
+  <li data-t="Обнаружение падения и неподвижности|Fall and inactivity detection|Sturz- und Reglosigkeitserkennung"></li>
+  <li data-t="Вопрос «Вы в порядке?» и 15 секунд на ответ|The “Are you OK?” question and 15 seconds to answer|Die Frage „Alles in Ordnung?“ und 15 Sekunden für die Antwort"></li>
+  <li data-t="Крик «Помогите!» — тревога сразу, даже без интернета|Shouting “Help!” — instant alarm, even without internet|Ruf „Hilfe!“ — sofort Alarm, auch ohne Internet"></li>
+  <li data-t="Кнопка SOS на браслете — работает в любой комнате|SOS button on the bracelet — works in any room|SOS-Taste am Armband — funktioniert in jedem Raum"></li>
+  <li data-t="Сирена, свет, SMS и звонок родным, потом в скорую|Siren, light, SMS and a call to family, then the ambulance|Sirene, Licht, SMS und Anruf an Familie, dann Rettungsdienst"></li>
+  <li data-t="Работает без интернета — своя SIM-карта|Works without internet — its own SIM card|Funktioniert ohne Internet — eigene SIM-Karte"></li>
+  <li data-t="Работает без света — встроенный аккумулятор|Works during a power cut — built-in battery|Funktioniert bei Stromausfall — eingebauter Akku"></li>
+  <li data-t="Датчик газа и дыма на кухне|Gas and smoke sensor in the kitchen|Gas- und Rauchsensor in der Küche"></li>
+  <li data-t="Предупреждение о жаре и холоде в комнате|Warning about heat and cold in the room|Warnung vor Hitze und Kälte im Raum"></li>
+  <li data-t="Ночная подсветка пути до туалета|Night path light to the toilet|Nachtlicht auf dem Weg zur Toilette"></li>
+  <li data-t="Защита от телефонных мошенников|Protection from phone scammers|Schutz vor Telefonbetrügern"></li>
+  <li data-t="ИИ не может отключить защиту или открыть дверь|The AI cannot switch off protection or open the door|Die KI kann den Schutz nicht abschalten und die Tür nicht öffnen"></li>
+  <li data-t="Видео и личные данные не уходят из дома|Video and personal data never leave the home|Video und persönliche Daten verlassen das Haus nicht"></li>
+  <li data-t="Можно перейти на старшую версию — блок тот же|You can upgrade later — the same safety unit|Späteres Upgrade möglich — dieselbe Sicherheitseinheit"></li>
+ </ul>
+ <div class="v-note rv"><b data-t="Честно о разнице|Honestly about the difference|Ehrlich zum Unterschied"></b><p data-t="Правила, скорость реакции и связь одинаковые. Отличается только <b>площадь, где падение замечается автоматически</b>. В Lite это одна комната — ставим датчик туда, где опаснее всего (обычно ванная). В остальных комнатах Lite помогает кнопка SOS на браслете. В Standard и Elite падение замечается во всех комнатах.|The rules, reaction speed and communication are identical. The only difference is <b>the area where a fall is noticed automatically</b>. In Lite that is one room — we put the sensor where it is most dangerous (usually the bathroom). In the other rooms, Lite relies on the SOS button on the bracelet. In Standard and Elite falls are noticed in every room.|Regeln, Reaktionszeit und Verbindung sind gleich. Anders ist nur <b>der Bereich, in dem ein Sturz automatisch erkannt wird</b>. Bei Lite ist das ein Raum — der Sensor kommt dorthin, wo es am gefährlichsten ist (meist das Bad). In den anderen Räumen hilft bei Lite die SOS-Taste am Armband. Bei Standard und Elite wird ein Sturz in allen Räumen erkannt."></p></div>
+</section>
+
+<section id="versions" class="vx">
+ <div class="k rv" data-t="Версии|Versions|Versionen"></div>
+ <h2 class="sp" data-t="Выберите <em>по дому и бюджету.</em>|Choose <em>by home and budget.</em>|Wählen Sie <em>nach Wohnung und Budget.</em>"></h2>
+ <p class="rv" data-t="Все три версии защищают одинаково. Они отличаются тем, сколько комнат охвачено, что умеет помощник и есть ли управление домом.|All three versions protect equally. They differ in how many rooms are covered, what the assistant can do and whether the home can be controlled.|Alle drei Versionen schützen gleich. Sie unterscheiden sich darin, wie viele Räume abgedeckt sind, was der Assistent kann und ob sich das Zuhause steuern lässt."></p>
+ <div class="v-vers">
+  <!-- LITE -->
+  <article class="v-ver rv" data-v="lite">
+   <div class="v-vtop"><span class="v-vbadge" data-t="✓ Полная защита|✓ Full protection|✓ Voller Schutz"></span><h3>Lite</h3><p class="v-vsub" data-t="Одна комната|One room|Ein Raum"></p></div>
+   <svg class="v-vfig" viewBox="0 0 300 230" aria-hidden="true"></svg>
+   <p class="v-vfor" data-t="<b>Для кого:</b> маленькая квартира или небольшой бюджет. Человек проводит большую часть времени в одной комнате.|<b>For whom:</b> a small flat or a small budget. The person spends most of the time in one room.|<b>Für wen:</b> kleine Wohnung oder kleines Budget. Die Person ist meist in einem Raum."></p>
+   <h4 data-t="Что в комплекте|What is included|Was dazugehört"></h4>
+   <ul>
+    <li data-t="Блок безопасности + браслет с кнопкой SOS|Safety unit + bracelet with SOS button|Sicherheitseinheit + Armband mit SOS-Taste"></li>
+    <li data-t="1 радар — замечает падение в одной комнате, без камеры|1 radar — notices falls in one room, no camera|1 Radar — erkennt Stürze in einem Raum, ohne Kamera"></li>
+    <li data-t="Колонка с ИИ-помощником|Speaker with the AI assistant|Lautsprecher mit KI-Assistent"></li>
+    <li data-t="Датчики газа и температуры, ночная подсветка|Gas and temperature sensors, night light|Gas- und Temperatursensor, Nachtlicht"></li>
+   </ul>
+   <h4 data-t="ИИ-помощник умеет|The AI assistant can|Der KI-Assistent kann"></h4>
+   <ul>
+    <li data-t="Разговаривать на узбекском и русском|Talk in Uzbek and Russian|Usbekisch und Russisch sprechen"></li>
+    <li data-t="Включать музыку, радио, новости, погоду|Play music, radio, news, weather|Musik, Radio, Nachrichten, Wetter abspielen"></li>
+    <li data-t="Искать в интернете то, что попросили|Search the internet for what you ask|Im Internet suchen, worum man bittet"></li>
+    <li data-t="Звонить родным голосом и напоминать о лекарствах|Call family by voice and remind about medicine|Per Stimme die Familie anrufen, an Medikamente erinnern"></li>
+   </ul>
+   <h4 data-t="Умный дом|Smart home|Smart Home"></h4><p class="no" data-t="Нет|No|Nein"></p>
+   <div class="v-price"><span data-t="Детали прототипа|Prototype parts|Prototyp-Teile"></span><b>≈ $150–200</b></div>
+  </article>
+  <!-- STANDARD -->
+  <article class="v-ver v-pop rv" data-v="std">
+   <div class="v-vtop"><span class="v-vbadge" data-t="✓ Полная защита|✓ Full protection|✓ Voller Schutz"></span><span class="v-vhot" data-t="Оптимальная|Best value|Empfohlen"></span><h3>Standard</h3><p class="v-vsub" data-t="Вся квартира|The whole flat|Die ganze Wohnung"></p></div>
+   <svg class="v-vfig" viewBox="0 0 300 230" aria-hidden="true"></svg>
+   <p class="v-vfor" data-t="<b>Для кого:</b> обычная квартира пожилого человека — спальня, ванная, кухня, гостиная.|<b>For whom:</b> a typical flat of an elderly person — bedroom, bathroom, kitchen, living room.|<b>Für wen:</b> eine typische Wohnung eines älteren Menschen — Schlafzimmer, Bad, Küche, Wohnzimmer."></p>
+   <h4 data-t="Всё из Lite, плюс|Everything in Lite, plus|Alles aus Lite, dazu"></h4>
+   <ul>
+    <li data-t="Радары в 3 комнатах — падение замечается по всей квартире|Radars in 3 rooms — falls are noticed across the whole flat|Radare in 3 Räumen — Stürze werden in der ganzen Wohnung erkannt"></li>
+    <li data-t="Тепловизор в ванной — видит падение в темноте и без камеры|Thermal sensor in the bathroom — sees a fall in the dark, without a camera|Wärmesensor im Bad — erkennt Stürze im Dunkeln, ohne Kamera"></li>
+    <li data-t="Приложение для семьи: статус, журнал, напоминания|Family app: status, log, reminders|Familien-App: Status, Protokoll, Erinnerungen"></li>
+   </ul>
+   <h4 data-t="ИИ-помощник дополнительно|The AI assistant also|Der KI-Assistent zusätzlich"></h4>
+   <ul>
+    <li data-t="Слышит и отвечает в каждой охваченной комнате|Hears and answers in every covered room|Hört und antwortet in jedem abgedeckten Raum"></li>
+    <li data-t="Сообщает семье, если лекарство пропущено|Tells the family if a medicine was missed|Meldet der Familie vergessene Medikamente"></li>
+   </ul>
+   <h4 data-t="Умный дом|Smart home|Smart Home"></h4><p class="no" data-t="Нет|No|Nein"></p>
+   <div class="v-price"><span data-t="Детали прототипа|Prototype parts|Prototyp-Teile"></span><b>≈ $300–400</b></div>
+  </article>
+  <!-- ELITE -->
+  <article class="v-ver rv" data-v="eli">
+   <div class="v-vtop"><span class="v-vbadge" data-t="✓ Полная защита|✓ Full protection|✓ Voller Schutz"></span><h3>Elite</h3><p class="v-vsub" data-t="Умный и безопасный дом|A smart and safe home|Ein smartes und sicheres Zuhause"></p></div>
+   <svg class="v-vfig" viewBox="0 0 300 230" aria-hidden="true"></svg>
+   <p class="v-vfor" data-t="<b>Для кого:</b> большая квартира или дом, где хочется максимум удобства.|<b>For whom:</b> a large flat or house where you want maximum comfort.|<b>Für wen:</b> große Wohnung oder Haus mit maximalem Komfort."></p>
+   <h4 data-t="Всё из Standard, плюс|Everything in Standard, plus|Alles aus Standard, dazu"></h4>
+   <ul>
+    <li data-t="Датчики в каждой комнате, на всех этажах|Sensors in every room, on every floor|Sensoren in jedem Raum, auf jeder Etage"></li>
+    <li data-t="Камера позы в гостиной — по желанию. Видит позу, а не лицо; видео не уходит из дома|Pose camera in the living room — optional. Sees posture, not faces; video never leaves the home|Haltungskamera im Wohnzimmer — optional. Sieht Haltung, nicht Gesichter; Video verlässt das Haus nicht"></li>
+    <li data-t="Более мощный «мозг»: ИИ отвечает быстрее и понимает сложные просьбы|A stronger “brain”: the AI answers faster and understands complex requests|Ein stärkeres „Gehirn“: Die KI antwortet schneller und versteht komplexe Bitten"></li>
+   </ul>
+   <h4 data-t="ИИ-помощник дополнительно|The AI assistant also|Der KI-Assistent zusätzlich"></h4>
+   <ul>
+    <li data-t="Знает обычный распорядок дня и замечает необычное|Knows the usual daily routine and notices the unusual|Kennt den üblichen Tagesablauf und bemerkt Ungewöhnliches"></li>
+    <li data-t="Собеседник, видеозвонок родным на телевизоре|A conversation partner, video calls with family on the TV|Gesprächspartner, Videoanruf mit der Familie am Fernseher"></li>
+   </ul>
+   <h4 data-t="Умный дом|Smart home|Smart Home"></h4>
+   <ul>
+    <li data-t="Свет, телевизор, колонки, кондиционер — голосом|Lights, TV, speakers, air conditioning — by voice|Licht, Fernseher, Lautsprecher, Klimaanlage — per Stimme"></li>
+    <li data-t="Перед действиями спрашивает разрешение|Asks for permission before acting|Fragt vor Aktionen um Erlaubnis"></li>
+   </ul>
+   <div class="v-price"><span data-t="Детали прототипа|Prototype parts|Prototyp-Teile"></span><b>≈ $600–900</b></div>
+  </article>
+ </div>
+ <p class="v-fine rv" data-t="Цены — примерная стоимость деталей прототипа, а не цена продажи. Интернет нужен только для музыки, новостей и поиска; защита работает и без него.|Prices are the approximate cost of prototype parts, not a retail price. Internet is needed only for music, news and search; protection works without it.|Preise sind die ungefähren Kosten der Prototyp-Teile, kein Verkaufspreis. Internet braucht man nur für Musik, Nachrichten und Suche; der Schutz funktioniert auch ohne."></p>
+</section>
+
+<section id="vdemo" class="vx">
+ <div class="k rv" data-t="В действии|In action|In Aktion"></div>
+ <h2 class="sp" data-t="Посмотрите, <em>как это работает.</em>|See <em>how it works.</em>|Sehen Sie, <em>wie es funktioniert.</em>"></h2>
+ <p class="rv" data-t="Выберите версию и сценарий. Человечек живёт в доме, а система реагирует так, как работала бы на самом деле. Справа простыми словами написано, что происходит.|Choose a version and a scenario. The little person lives in the home and the system reacts as it really would. On the right, plain words explain what is happening.|Wählen Sie Version und Szenario. Die kleine Figur lebt im Haus, und das System reagiert so, wie es wirklich würde. Rechts steht in einfachen Worten, was passiert."></p>
+ <div class="v-dctl rv">
+  <div class="v-seg" id="v-vsel" role="tablist"><button data-v="lite">Lite</button><button data-v="std" class="on">Standard</button><button data-v="eli">Elite</button></div>
+  <div class="v-tabs" id="v-ssel"></div>
+ </div>
+ <div class="v-stage rv" id="v-stage">
+  <div class="v-sbox"><svg id="v-ds" viewBox="0 0 800 470" role="img" aria-label="Animated home">
+   <defs>
+    <clipPath id="v-cBath"><rect x="22" y="172" width="206" height="256"/></clipPath>
+    <clipPath id="v-cBed"><rect x="232" y="172" width="266" height="256"/></clipPath>
+    <clipPath id="v-cLiv"><rect x="502" y="172" width="276" height="256"/></clipPath>
+    <clipPath id="v-cHouse"><rect x="21" y="171" width="758" height="258"/></clipPath>
+    <radialGradient id="v-gLamp"><stop offset="0" stop-color="#ffd987" stop-opacity=".75"/><stop offset="1" stop-color="#ffd987" stop-opacity="0"/></radialGradient>
+    <linearGradient id="v-gTh" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ff8a3d" stop-opacity=".35"/><stop offset="1" stop-color="#ff8a3d" stop-opacity="0"/></linearGradient>
+    <linearGradient id="v-gCam" x1="1" y1="0" x2="0" y2="1"><stop offset="0" style="stop-color:var(--ac)" stop-opacity=".35"/><stop offset="1" style="stop-color:var(--ac)" stop-opacity="0"/></linearGradient>
+   </defs>
+   <line class="v-hl" x1="0" y1="430" x2="800" y2="430"/>
+   <polygon class="v-hf" points="4,172 400,62 796,172"/>
+   <rect class="v-hf" x="20" y="170" width="760" height="260"/>
+   <!-- зоны покрытия -->
+   <rect class="v-cov" id="v-covBath" x="22" y="172" width="206" height="256"/>
+   <rect class="v-cov" id="v-covBed" x="232" y="172" width="266" height="256"/>
+   <rect class="v-cov" id="v-covLiv" x="502" y="172" width="276" height="256"/>
+   <path class="v-hl" d="M230 170V292M500 170V292"/>
+   <text class="v-ht" x="125" y="196" text-anchor="middle" data-t="ВАННАЯ|BATHROOM|BAD"></text>
+   <text class="v-ht" x="365" y="196" text-anchor="middle" data-t="СПАЛЬНЯ|BEDROOM|SCHLAFZIMMER"></text>
+   <text class="v-ht" x="640" y="196" text-anchor="middle" data-t="ГОСТИНАЯ|LIVING ROOM|WOHNZIMMER"></text>
+   <!-- окна -->
+   <rect class="v-hf" x="130" y="226" width="56" height="44" rx="3"/><path class="v-hl" d="M158 226v44"/>
+   <rect class="v-hf" x="330" y="222" width="80" height="62" rx="3"/><path class="v-hl" d="M370 222v62M330 253h80"/>
+   <!-- ванна -->
+   <rect class="v-hf" x="30" y="386" width="84" height="38" rx="14"/><path class="v-hl" d="M40 424v6M104 424v6M34 386v-26h10"/>
+   <!-- кровать и тумба -->
+   <rect class="v-hf" x="296" y="380" width="170" height="16" rx="7"/><rect class="v-hf" x="300" y="396" width="164" height="20" rx="3"/><path class="v-hl" d="M304 416v14M458 416v14"/><rect class="v-hf" x="464" y="350" width="10" height="80" rx="4"/><ellipse class="v-hf" cx="446" cy="374" rx="18" ry="7"/>
+   <rect class="v-hf" x="252" y="396" width="34" height="34" rx="2"/>
+   <!-- ночь -->
+   <rect class="v-night" id="v-night" x="21" y="171" width="758" height="258"/>
+   <!-- ТВ, тумба, колонка -->
+   <rect class="v-hf" x="516" y="400" width="96" height="30" rx="3"/>
+   <rect class="v-tvs" id="v-tv" x="522" y="300" width="84" height="54" rx="4"/><path class="v-hl" d="M564 354v46"/>
+   <g id="v-spk"><rect class="v-hf" x="586" y="374" width="20" height="26" rx="6"/><circle class="v-hl" cx="596" cy="389" r="5"/><circle class="v-led" cx="596" cy="379" r="1.8"/></g>
+   <!-- диван -->
+   <rect class="v-hf" x="626" y="398" width="104" height="32" rx="9"/><rect class="v-hf" x="714" y="352" width="22" height="78" rx="9"/><rect class="v-hf" x="618" y="384" width="18" height="46" rx="8"/>
+   <!-- дверь -->
+   <rect class="v-door" id="v-door" x="772" y="298" width="12" height="132" rx="2"/><circle class="v-lock" id="v-lock" cx="778" cy="366" r="4.5"/>
+   <!-- блок безопасности -->
+   <g id="v-sb"><rect class="v-sbx" x="736" y="240" width="30" height="38" rx="5"/><path class="v-sbs" d="M751 248c4 1.4 6 1.8 7 1.8 0 7-2.6 10.6-7 12.4-4.4-1.8-7-5.4-7-12.4 1 0 3-.4 7-1.8z"/><circle class="v-led" cx="751" cy="272" r="2"/></g>
+   <text class="v-ht v-sm" x="751" y="292" text-anchor="middle" data-t="БЛОК|UNIT|EINHEIT"></text>
+   <!-- лампы -->
+   <g class="v-lamp" id="v-lmBath"><circle cx="85" cy="200" r="110" fill="url(#v-gLamp)" class="v-glow"/><path class="v-hl" d="M85 170v14"/><circle class="v-bulb" cx="85" cy="190" r="7"/></g>
+   <g class="v-lamp" id="v-lmBed"><circle cx="300" cy="200" r="130" fill="url(#v-gLamp)" class="v-glow"/><path class="v-hl" d="M300 170v14"/><circle class="v-bulb" cx="300" cy="190" r="7"/></g>
+   <g class="v-lamp" id="v-lmLiv"><circle cx="660" cy="200" r="140" fill="url(#v-gLamp)" class="v-glow"/><path class="v-hl" d="M660 170v14"/><circle class="v-bulb" cx="660" cy="190" r="7"/></g>
+   <g id="v-path"></g>
+   <!-- датчики -->
+   <g class="v-dev" id="v-rdBath"><g clip-path="url(#v-cBath)"><circle class="v-rip" cx="28" cy="214" r="8"/><circle class="v-rip" cx="28" cy="214" r="8" style="animation-delay:-1s"/><circle class="v-rip" cx="28" cy="214" r="8" style="animation-delay:-2s"/></g><rect class="v-dvb" x="22" y="204" width="10" height="22" rx="3"/></g>
+   <g class="v-dev" id="v-rdBed"><g clip-path="url(#v-cBed)"><circle class="v-rip" cx="238" cy="214" r="8"/><circle class="v-rip" cx="238" cy="214" r="8" style="animation-delay:-1s"/><circle class="v-rip" cx="238" cy="214" r="8" style="animation-delay:-2s"/></g><rect class="v-dvb" x="232" y="204" width="10" height="22" rx="3"/></g>
+   <g class="v-dev" id="v-rdLiv"><g clip-path="url(#v-cLiv)"><circle class="v-rip" cx="508" cy="214" r="8"/><circle class="v-rip" cx="508" cy="214" r="8" style="animation-delay:-1s"/><circle class="v-rip" cx="508" cy="214" r="8" style="animation-delay:-2s"/></g><rect class="v-dvb" x="502" y="204" width="10" height="22" rx="3"/></g>
+   <g class="v-dev" id="v-thBath"><polygon points="206,182 40,430 226,430" fill="url(#v-gTh)"/><rect class="v-dvb v-th" x="196" y="174" width="22" height="12" rx="3"/></g>
+   <g class="v-dev" id="v-camLiv"><polygon points="770,186 540,430 778,430" fill="url(#v-gCam)"/><rect class="v-dvb" x="754" y="176" width="22" height="14" rx="4"/><circle cx="758" cy="183" r="3" style="fill:var(--ac)"/></g>
+   <!-- музыка -->
+   <g id="v-notes"><text class="v-mnote" x="600" y="364">♪</text><text class="v-mnote" x="606" y="364" style="animation-delay:-.7s">♫</text><text class="v-mnote" x="592" y="364" style="animation-delay:-1.4s">♪</text></g>
+   <!-- тревога -->
+   <rect class="v-alr" id="v-alr" x="21" y="171" width="758" height="258"/>
+   <g class="v-siren" id="v-siren"><circle cx="400" cy="46" r="8"/><path d="M400 30v-8M382 36l-6-6M418 36l6-6M376 50h-8M424 50h8"/></g>
+   <!-- блокировка двери -->
+   <g class="v-blk" id="v-blk"><path class="v-blkp" d="M751 300c10 3.4 15 4.4 17 4.4 0 17-6.4 26-17 30.4-10.6-4.4-17-13.4-17-30.4 2 0 7-1 17-4.4z"/><path class="v-blkx" d="M745 312l12 12M757 312l-12 12"/></g>
+   <path class="v-hk" id="v-hk" d="M600 300C640 250 700 250 740 262"/>
+   <!-- человек и реплики -->
+   <g id="v-pp" class="v-pp"></g>
+   <g id="v-cd" class="v-cdw"><circle class="v-cdt" r="20"/><circle class="v-cdv" r="20" transform="rotate(-90)"/><text class="v-cdn" y="6" text-anchor="middle">15</text></g>
+   <g id="v-bub"></g>
+  </svg>
+  <div class="v-elite" id="v-eliOnly"><b data-t="Умный дом есть только в версии Elite|Smart home is only in the Elite version|Smart Home gibt es nur in der Elite-Version"></b><p data-t="В Lite и Standard свет и телевизор управляются обычным способом. Защита при этом такая же.|In Lite and Standard lights and TV are controlled the usual way. Protection is the same.|In Lite und Standard werden Licht und Fernseher wie gewohnt bedient. Der Schutz ist derselbe."></p><button class="btn v-pri" id="v-toEli" type="button" data-t="Показать в Elite|Show in Elite|In Elite zeigen"></button></div>
+  </div>
+  <aside class="v-side">
+   <div class="v-stat" id="v-stat"><div class="v-r1"><span data-t="Статус системы|System status|Systemstatus"></span><span id="v-covTxt"></span></div><div class="v-r2"><i class="v-dot"></i><span id="v-stTxt">NORMAL</span></div></div>
+   <p class="v-sdesc" id="v-sdesc"></p>
+   <ol class="v-feed" id="v-feed"></ol>
+  </aside>
+ </div>
+</section>
+
+<section id="ai" class="vx">
+ <div class="k rv" data-t="ИИ-помощник|AI assistant|KI-Assistent"></div>
+ <h2 class="sp" data-t="Свой ИИ, <em>который живёт дома.</em>|Our own AI <em>that lives at home.</em>|Eigene KI, <em>die zu Hause lebt.</em>"></h2>
+ <p class="rv" data-t="Мы не берём чужого голосового помощника. Наш ИИ построен на открытой модели и работает прямо в доме, на нашем устройстве. Разговор, команды и тревога работают даже без интернета. Интернет нужен, только когда вы просите найти музыку, новости или фильм.|We do not use someone else's voice assistant. Our AI is built on an open model and runs right in the home, on our device. Conversation, commands and alarms work even without internet. Internet is needed only when you ask to find music, news or a film.|Wir nutzen keinen fremden Sprachassistenten. Unsere KI basiert auf einem offenen Modell und läuft direkt im Haus, auf unserem Gerät. Gespräch, Befehle und Alarm funktionieren auch ohne Internet. Internet braucht man nur, wenn man Musik, Nachrichten oder einen Film sucht."></p>
+ <div class="v-cards">
+  <div class="v-cd rv"><i>01</i><h4 data-t="Разговаривает|Talks|Spricht"></h4><p data-t="Понимает обычную речь на узбекском и русском. Не нужно учить команды — говорите как с человеком.|Understands everyday Uzbek and Russian. No commands to learn — talk as you would to a person.|Versteht Alltagssprache auf Usbekisch und Russisch. Keine Befehle lernen — einfach wie mit einem Menschen reden."></p></div>
+  <div class="v-cd rv"><i>02</i><h4 data-t="Ищет в интернете|Searches the internet|Sucht im Internet"></h4><p data-t="Музыка, радио, новости, погода, фильмы — находит то, что попросили, и включает.|Music, radio, news, weather, films — finds what you asked for and plays it.|Musik, Radio, Nachrichten, Wetter, Filme — findet, worum man bittet, und spielt es ab."></p></div>
+  <div class="v-cd rv"><i>03</i><h4 data-t="Звонит родным|Calls family|Ruft die Familie an"></h4><p data-t="«Позвони сыну» — и звонок пошёл. Без кнопок и экранов.|“Call my son” — and the call starts. No buttons or screens.|„Ruf meinen Sohn an“ — und der Anruf startet. Ohne Tasten und Bildschirm."></p></div>
+  <div class="v-cd rv"><i>04</i><h4 data-t="Напоминает|Reminds|Erinnert"></h4><p data-t="О лекарствах, о воде в жару, о визите к врачу. Отмечает, выпито ли лекарство.|About medicine, drinking water in the heat, doctor's visits. Notes whether the medicine was taken.|An Medikamente, Trinken bei Hitze, Arzttermine. Notiert, ob das Medikament genommen wurde."></p></div>
+  <div class="v-cd rv"><i>05</i><h4 data-t="Защищает от мошенников|Protects from scammers|Schützt vor Betrügern"></h4><p data-t="Никогда не помогает с деньгами и кодами из SMS. Предупреждает и сообщает семье.|Never helps with money or SMS codes. Warns and tells the family.|Hilft nie bei Geld oder SMS-Codes. Warnt und informiert die Familie."></p></div>
+  <div class="v-cd rv"><i>06</i><h4 data-t="Всегда честен|Always honest|Immer ehrlich"></h4><p data-t="Говорит, что он — помощник, а не человек. Не ставит диагнозы и не меняет дозы лекарств.|Says that it is an assistant, not a person. Does not diagnose and does not change medicine doses.|Sagt, dass er ein Assistent ist, kein Mensch. Stellt keine Diagnosen und ändert keine Dosierungen."></p></div>
+ </div>
+
+ <h3 class="v-sub rv" data-t="Почему взлом ИИ не сделает дом опасным|Why hacking the AI cannot make the home dangerous|Warum ein KI-Hack das Zuhause nicht gefährlich macht"></h3>
+ <p class="rv" data-t="Честно: взломать можно любое устройство с интернетом. Поэтому мы построили систему так, что даже взломанный ИИ не может сделать ничего опасного — открыть дверь или отключить тревогу ему физически нечем.|Honestly: any device with internet can be hacked. So we built the system so that even a hacked AI cannot do anything dangerous — it simply has no way to open the door or switch off the alarm.|Ehrlich: Jedes Gerät mit Internet kann gehackt werden. Darum haben wir das System so gebaut, dass selbst eine gehackte KI nichts Gefährliches tun kann — sie hat schlicht keine Möglichkeit, die Tür zu öffnen oder den Alarm abzuschalten."></p>
+ <div class="v-guard rv" id="v-guard"><svg id="v-gs" viewBox="0 0 900 260" role="img" aria-label="AI, guard and devices"></svg><p class="v-cap" data-t="ИИ не управляет устройствами сам — он только просит «охранника». Охранник — обычная программа с жёсткими правилами. Его нельзя уговорить, потому что он не ИИ.|The AI does not control devices itself — it only asks the “guard”. The guard is an ordinary program with strict rules. It cannot be talked into anything, because it is not an AI.|Die KI steuert Geräte nicht selbst — sie bittet nur den „Wächter“. Der Wächter ist ein normales Programm mit festen Regeln. Man kann ihn nicht überreden, denn er ist keine KI."></p></div>
+ <div class="v-lv6">
+  <div class="v-cd rv"><i>1</i><h4 data-t="Защита живёт отдельно|Protection lives separately|Schutz lebt getrennt"></h4><p data-t="Блок безопасности — отдельное устройство без интернета. ИИ может только узнать его статус, но не управлять им. Даже если ИИ сломать, тревога работает.|The safety unit is a separate device without internet. The AI can only read its status, never control it. Even if the AI breaks, the alarm works.|Die Sicherheitseinheit ist ein eigenes Gerät ohne Internet. Die KI kann nur ihren Status lesen, sie nie steuern. Selbst wenn die KI ausfällt, funktioniert der Alarm."></p></div>
+  <div class="v-cd rv"><i>2</i><h4 data-t="ИИ только просит|The AI only asks|Die KI bittet nur"></h4><p data-t="ИИ не нажимает кнопки сам. Он отправляет короткую просьбу из списка, а охранник её проверяет.|The AI does not press buttons itself. It sends a short request from a list, and the guard checks it.|Die KI drückt keine Knöpfe selbst. Sie schickt eine kurze Bitte aus einer Liste, der Wächter prüft sie."></p></div>
+  <div class="v-cd rv"><i>3</i><h4 data-t="Запреты — в коде|Bans are in the code|Verbote im Code"></h4><p data-t="Запреты зашиты в программу, а не в «уговор» с ИИ. Команды «открыть дверь» у охранника просто нет.|The bans are built into the program, not into an “agreement” with the AI. The guard simply has no “open the door” command.|Die Verbote stehen im Programm, nicht in einer „Absprache“ mit der KI. Einen Befehl „Tür öffnen“ hat der Wächter einfach nicht."></p></div>
+  <div class="v-cd rv"><i>4</i><h4 data-t="Чужой голос — не команда|A stranger's voice is not a command|Fremde Stimme ist kein Befehl"></h4><p data-t="ИИ узнаёт звук из своего телевизора и колонки. Важные действия подтверждаются только кнопкой, а не голосом.|The AI recognises sound from its own TV and speaker. Important actions are confirmed only with a button, never by voice.|Die KI erkennt Ton aus dem eigenen Fernseher und Lautsprecher. Wichtige Aktionen werden nur per Taste bestätigt, nie per Stimme."></p></div>
+  <div class="v-cd rv"><i>5</i><h4 data-t="Интернет только «на выход»|Internet is “outgoing only”|Internet nur „ausgehend“"></h4><p data-t="К дому нельзя подключиться снаружи. Устройство само ходит только на разрешённые сайты, а обновления проверяются цифровой подписью.|Nobody can connect to the home from outside. The device itself only visits allowed sites, and updates are checked with a digital signature.|Von außen kann sich niemand verbinden. Das Gerät besucht nur erlaubte Seiten, Updates werden per digitaler Signatur geprüft."></p></div>
+  <div class="v-cd rv"><i>6</i><h4 data-t="Всё видит семья|The family sees everything|Die Familie sieht alles"></h4><p data-t="Каждое действие ИИ записывается в журнал. Если ИИ ведёт себя странно, охранник его блокирует и сообщает родным.|Every AI action is logged. If the AI behaves strangely, the guard blocks it and tells the family.|Jede KI-Aktion wird protokolliert. Verhält sich die KI seltsam, blockiert der Wächter sie und informiert die Familie."></p></div>
+ </div>
+ <h3 class="v-sub rv" data-t="ИИ никогда не может|The AI can never|Die KI kann niemals"></h3>
+ <div class="v-tbl rv"><table class="v-nev">
+  <thead><tr><th data-t="Запрещено ИИ|Forbidden for the AI|Für die KI verboten"></th><th data-t="Как это делается вместо этого|How it is done instead|Wie es stattdessen geht"></th></tr></thead>
+  <tbody>
+   <tr><td data-t="Открыть входную дверь|Open the front door|Die Haustür öffnen"></td><td data-t="Только кнопкой у двери или в приложении семьи с подтверждением|Only with the button at the door or in the family app with confirmation|Nur per Taste an der Tür oder in der Familien-App mit Bestätigung"></td></tr>
+   <tr><td data-t="Отключить датчики или тревогу|Switch off sensors or the alarm|Sensoren oder Alarm abschalten"></td><td data-t="Только на самом блоке безопасности|Only on the safety unit itself|Nur an der Sicherheitseinheit selbst"></td></tr>
+   <tr><td data-t="Деньги, переводы, коды из SMS|Money, transfers, SMS codes|Geld, Überweisungen, SMS-Codes"></td><td data-t="Нигде и никогда|Nowhere, never|Nirgends, niemals"></td></tr>
+   <tr><td data-t="Менять настройки и контакты семьи|Change settings and family contacts|Einstellungen und Familienkontakte ändern"></td><td data-t="Только в приложении семьи|Only in the family app|Nur in der Familien-App"></td></tr>
+   <tr><td data-t="Отправлять видео и данные наружу|Send video and data outside|Video und Daten nach außen senden"></td><td data-t="Видео обрабатывается дома и не покидает его|Video is processed at home and never leaves it|Video wird zu Hause verarbeitet und verlässt es nie"></td></tr>
+   <tr><td data-t="Ставить диагнозы, менять дозы лекарств|Diagnose, change medicine doses|Diagnosen stellen, Dosierungen ändern"></td><td data-t="Предлагает позвонить родным или врачу|Offers to call family or a doctor|Bietet an, Familie oder Arzt anzurufen"></td></tr>
+  </tbody></table></div>
+ <div class="v-note rv"><b data-t="Честно об ограничениях|Honestly about the limits|Ehrlich zu den Grenzen"></b><p data-t="ИИ на домашнем устройстве отвечает медленнее больших облачных ИИ и хуже справляется со сложными вопросами. Узбекскую речь пожилых людей ещё нужно проверить в реальных испытаниях.|An AI on a home device answers slower than big cloud AIs and is weaker at complex questions. Elderly people's Uzbek speech still needs to be tested in real trials.|Eine KI auf einem Heimgerät antwortet langsamer als große Cloud-KIs und ist bei komplexen Fragen schwächer. Usbekische Sprache älterer Menschen muss noch in echten Tests geprüft werden."></p></div>
+</section>
+
+<section id="smart" class="vx">
+ <div class="k rv" data-t="Умный дом · Elite|Smart home · Elite|Smart Home · Elite"></div>
+ <h2 class="sp" data-t="Умный дом, <em>который спрашивает.</em>|A smart home <em>that asks.</em>|Ein Smart Home, <em>das fragt.</em>"></h2>
+ <p class="rv" data-t="В Elite помощник управляет светом, телевизором, колонками и кондиционером. Перед действиями он спрашивает разрешение — но с умом, чтобы вопросы не надоедали.|In Elite the assistant controls lights, TV, speakers and air conditioning. It asks for permission before acting — but sensibly, so the questions never get annoying.|In Elite steuert der Assistent Licht, Fernseher, Lautsprecher und Klimaanlage. Vor Aktionen fragt er um Erlaubnis — aber mit Verstand, damit die Fragen nicht nerven."></p>
+ <div class="v-rules">
+  <div class="v-rl rv"><span class="v-rq" data-t="Вы сами попросили|You asked yourself|Sie haben selbst gebeten"></span><b data-t="«Включи свет»|“Turn on the light”|„Mach das Licht an“"></b><p data-t="Просьба — это и есть разрешение. Делает сразу и говорит: «Включила свет в гостиной».|The request itself is the permission. Does it at once and says: “Turned on the living-room light”.|Die Bitte ist schon die Erlaubnis. Erledigt es sofort und sagt: „Licht im Wohnzimmer ist an“."></p></div>
+  <div class="v-rl rv"><span class="v-rq v-ask" data-t="ИИ сам предлагает|The AI suggests|Die KI schlägt vor"></span><b data-t="«Темнеет. Включить свет?»|“It is getting dark. Turn on the light?”|„Es wird dunkel. Licht an?“"></b><p data-t="Всегда спрашивает разрешение и ждёт ответа «Да».|Always asks for permission and waits for “Yes”.|Fragt immer um Erlaubnis und wartet auf „Ja“."></p></div>
+  <div class="v-rl rv"><span class="v-rq v-imp" data-t="Важное действие|Important action|Wichtige Aktion"></span><b data-t="Дверь, плита, звонок, покупка|Door, stove, call, purchase|Tür, Herd, Anruf, Kauf"></b><p data-t="Всегда спрашивает. Дверь открывается только кнопкой — голосом нельзя.|Always asks. The door opens only with a button — never by voice.|Fragt immer. Die Tür öffnet sich nur per Taste — nie per Stimme."></p></div>
+  <div class="v-rl rv"><span class="v-rq v-alarm" data-t="Тревога|Alarm|Alarm"></span><b data-t="Человек упал и не отвечает|The person fell and does not answer|Die Person ist gestürzt und antwortet nicht"></b><p data-t="Не спрашивает: сам включает весь свет и ставит телевизор на паузу. Это помогает и человеку, и врачам.|Does not ask: turns on all lights and pauses the TV by itself. This helps both the person and the paramedics.|Fragt nicht: schaltet selbst alles Licht ein und pausiert den Fernseher. Das hilft der Person und dem Rettungsdienst."></p></div>
+ </div>
+</section>
+
+<section id="compare" class="vx">
+ <div class="k rv" data-t="Сравнение|Comparison|Vergleich"></div>
+ <h2 class="sp" data-t="Всё рядом, <em>в одной таблице.</em>|Everything side by side, <em>in one table.</em>|Alles nebeneinander, <em>in einer Tabelle.</em>"></h2>
+ <div class="v-tbl rv"><table class="v-cmp" id="v-cmp"></table></div>
+</section>
+
+
+<section id="system"><div class="k rv" data-t="Архитектура|Architecture"></div><h2 class="sp" data-t="Чувствовать. <em>Понимать.</em> Действовать.|Sense. <em>Understand.</em> Act."></h2>
+<p class="rv" data-t="Всё, что выше, — три версии SAFEHOME. Ниже — наш работающий прототип: блок безопасности, который одинаков во всех трёх версиях.|Everything above is the three versions of SAFEHOME. Below is our working prototype: the safety unit that is identical in all three versions.|Alles oben sind die drei Versionen von SAFEHOME. Unten ist unser funktionierender Prototyp: die Sicherheitseinheit, die in allen drei Versionen gleich ist."></p>
+<div class="cards">
+<div class="cd rv"><span class="n">01 · SENSOR</span><svg class="cic" viewBox="0 0 64 64"><rect class="s" x="18" y="18" width="28" height="28" rx="4"/><path class="s" d="M24 18v-6M32 18v-6M40 18v-6M24 46v6M32 46v6M40 46v6M18 24h-6M18 32h-6M18 40h-6M46 24h6M46 32h6M46 40h6"/><circle class="dl" cx="32" cy="32" r="3.2"/><path class="s w1" d="M49 14a12 12 0 0 1 7 7"/><path class="s w2" d="M47 7a20 20 0 0 1 12 12"/></svg><h3>ESP32<br>Sensor Hub</h3><p data-t="Собирает данные о доме и человеке.|Collects data about the home and the resident."></p><ul><li>MLX90614 — <span data-t="ИК-индикатор|IR indicator"></span></li><li>BME280 · BH1750</li><li>PIR · LD2410 mmWave</li><li>MQ-2 (demo) · Reed · OLED</li><li data-t="Кнопка SOS и браслет|SOS button and bracelet|SOS-Taster und Armband"></li></ul></div>
+<div class="cd rv"><span class="n">02 · INTELLIGENCE</span><svg class="cic" viewBox="0 0 64 64"><rect class="s" x="8" y="14" width="48" height="34" rx="4"/><rect class="s" x="24" y="22" width="16" height="16" rx="2"/><path class="s" d="M14 20v6M14 36v6M50 20v6M50 36v6"/><circle class="pls" cx="32" cy="30" r="12"/><circle class="pls b" cx="32" cy="30" r="12"/><path class="s wv" d="M8 56h48"/></svg><h3>Raspberry Pi 5<br>Risk Engine</h3><p data-t="Анализирует позу и сигналы датчиков локально.|Analyses posture and sensor signals locally."></p><ul><li>MediaPipe Pose</li><li>Flask · SQLite</li><li data-t="Оценка риска 0–100|Risk score 0–100"></li></ul></div>
+<div class="cd rv"><span class="n">03 · RESPONSE</span><svg class="cic" viewBox="0 0 64 64"><g class="swing"><path class="s" d="M20 42c0-5 3-7 3-14a9 9 0 0 1 18 0c0 7 3 9 3 14z"/><path class="s" d="M28 48a4 4 0 0 0 8 0M32 16v-4"/></g><path class="s w1" d="M50 22a18 18 0 0 1 4 10"/><path class="s w2" d="M54 16a26 26 0 0 1 6 16"/></svg><h3 data-t="Реакция<br>без задержки|Instant<br>response"></h3><p data-t="Спрашивает «Всё ли в порядке?», ждёт 15 секунд и действует.|Asks “Is everything OK?”, waits 15 seconds and acts.|Fragt „Ist alles in Ordnung?“, wartet 15 Sekunden und handelt."></p><ul><li>Dashboard</li><li data-t="Вопрос жильцу · таймер 15 с|Question to the resident · 15 s timer|Frage an die Person · 15-s-Timer"></li><li data-t="Красный свет и сирена|Red light and siren"></li><li data-t="SMS близким и звонок в скорую|SMS to family and ambulance call|SMS an Angehörige und Anruf beim Rettungsdienst"></li></ul></div></div></section>
+
+<section id="plan"><div class="k rv" data-t="Конструкция|Construction|Aufbau"></div><h2 class="sp" data-t="Живой план <em>дома.</em>|A living plan <em>of the home.</em>|Der lebendige <em>Bauplan.</em>"></h2>
+<p class="rv" data-t="Где что стоит и как всё соединено. Нажмите на устройство или на тип провода — линия подсветится. Бегущие точки показывают, куда идут данные.|Where everything stands and how it is wired. Click a device or a wire type — the line lights up. Moving dots show where the data goes.|Wo alles steht und wie es verkabelt ist. Klicken Sie auf ein Gerät oder einen Leitungstyp — die Linie leuchtet auf. Wandernde Punkte zeigen, wohin die Daten fließen."></p>
+<div class="plw rv" id="plw"><button class="fsb" type="button" aria-label="Fullscreen"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path class="ex" d="M9 4H4v5M15 4h5v5M9 20H4v-5M15 20h5v-5"/><path class="co" d="M4 9h5V4M20 9h-5V4M4 15h5v5M20 15h-5v5"/></svg></button><button class="psb" type="button" aria-label="Pause"><svg viewBox="0 0 24 24" fill="currentColor"><path class="pa" d="M7 5h3.4v14H7zM13.6 5H17v14h-3.4z"/><path class="pl" d="M8 5l11 7-11 7z"/></svg></button>
+<div class="plc"><svg id="pl" class="plsvg" viewBox="0 0 1000 560" data-solo="" role="img" aria-label="Floor plan with devices and wiring">
+<defs><marker id="plm" markerWidth="6" markerHeight="6" refX="3" refY="3"><circle cx="3" cy="3" r="2"/></marker></defs>
+<g id="plr">
+<rect class="rm" x="30" y="30" width="380" height="230"/><rect class="rm" x="410" y="30" width="380" height="230"/><rect class="rm" x="30" y="260" width="760" height="100" style="fill:rgb(var(--ov)/.015)"/><rect class="rm" x="30" y="360" width="440" height="170"/><rect class="rm" x="470" y="360" width="320" height="170" style="fill:rgb(var(--ov)/.015)"/>
+<polygon class="fov" points="84,86 396,60 396,246"/>
+<path class="wl" d="M30 30H790V530H30V350M30 290V30"/>
+<path class="wl" d="M30 260H150M210 260H560M620 260H790M410 30V260M30 360H230M290 360H790M470 360V530"/>
+<path class="wl" style="stroke:var(--ye);stroke-width:4" d="M150 260H210M560 260H620M230 360H290M30 290V350"/>
+<rect class="fur" x="168" y="198" width="170" height="40" rx="10"/><rect class="fur" x="168" y="186" width="24" height="52" rx="8"/><rect class="fur" x="314" y="186" width="24" height="52" rx="8"/>
+<rect class="fur" x="560" y="96" width="150" height="124" rx="8"/><rect class="fur" x="568" y="104" width="134" height="26" rx="8"/><rect class="fur" x="528" y="190" width="26" height="26" rx="4"/>
+<rect class="fur" x="46" y="418" width="82" height="62" rx="6"/><circle class="fur" cx="68" cy="438" r="8"/><circle class="fur" cx="106" cy="438" r="8"/><circle class="fur" cx="68" cy="464" r="8"/><circle class="fur" cx="106" cy="464" r="8"/>
+<rect class="fur" x="240" y="440" width="130" height="60" rx="8"/><rect class="fur" x="46" y="500" width="410" height="22" rx="4"/>
+<g class="rl"><text x="44" y="48" data-t="Гостиная|Living room|Wohnzimmer"></text><text x="776" y="48" text-anchor="end" data-t="Спальня|Bedroom|Schlafzimmer"></text><text x="776" y="352" text-anchor="end" data-t="Коридор · кабель-канал|Corridor · cable duct|Flur · Kabelkanal"></text><text x="456" y="400" text-anchor="end" data-t="Кухня|Kitchen|Küche"></text><text x="900" y="62" text-anchor="middle" data-t="Снаружи|Outside|Draußen"></text></g>
+<rect class="cab" x="480" y="372" width="300" height="154" rx="10"/><text class="ptx" x="490" y="519">SAFEHOME CORE</text>
+<path class="drs" d="M850 90v-0"/>
+</g>
+<g id="plwg"></g><g id="pld"></g>
+</svg></div>
+<aside class="pli"><div class="plg" id="plg"></div><div class="pic" id="pic"></div><div class="pls2"><i></i><span id="plt"></span></div></aside></div></section>
+
+<section id="model"><div class="k rv" data-t="Живая модель|Living model"></div><h2 class="sp" data-t="Дом, который <em>понимает.</em>|A home that <em>understands.</em>"></h2>
+<p class="rv" data-t="Это не картинка, а модель: человек двигается, датчики реагируют, Risk Engine принимает решение. Выберите сценарий.|This is not a picture but a model: the resident moves, sensors react, the Risk Engine decides. Pick a scenario."></p>
+<div class="mwr rv"><div class="mcol"><div class="hsc" id="hsc"><div class="msky"></div><button class="fsb" type="button" aria-label="Fullscreen"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path class="ex" d="M9 4H4v5M15 4h5v5M9 20H4v-5M15 20h5v-5"/><path class="co" d="M4 9h5V4M20 9h-5V4M4 15h5v5M20 15h-5v5"/></svg></button><button class="psb" type="button" aria-label="Pause"><svg viewBox="0 0 24 24" fill="currentColor"><path class="pa" d="M7 5h3.4v14H7zM13.6 5H17v14h-3.4z"/><path class="pl" d="M8 5l11 7-11 7z"/></svg></button><div class="fsbar"><div class="fst"><i class="dot"></i><b id="fsn">NORMAL</b><span id="fsr">8</span><span id="fsp" class="hrt">♥ 72</span><em id="fsl"></em></div><div class="fsc" id="fsc"><button type="button" data-i="0">1</button><button type="button" data-i="1">2</button><button type="button" data-i="2">3</button><button type="button" data-i="3">4</button><button type="button" data-i="4">5</button><button type="button" data-i="5">6</button></div></div>
+<svg id="hs" viewBox="0 0 1120 484" role="img" aria-label="SAFEHOME living model">
+<defs>
+<radialGradient id="zg"><stop offset="0" stop-color="#ffd27a" stop-opacity=".8"/><stop offset="1" stop-color="#ffd27a" stop-opacity="0"/></radialGradient>
+<linearGradient id="zcg" gradientUnits="userSpaceOnUse" x1="440" y1="214" x2="230" y2="400"><stop offset="0" style="stop-color:var(--ac)" stop-opacity=".6"/><stop offset="1" style="stop-color:var(--ac)" stop-opacity="0"/></linearGradient>
+<clipPath id="zcone"><polygon points="440,214 152,284 152,440 420,440"/></clipPath>
+<clipPath id="zbed"><rect x="500" y="172" width="278" height="266"/></clipPath>
+</defs>
+<!-- окружение -->
+<g class="env">
+<g class="sun"><g class="rays" id="rays"></g><circle cx="84" cy="84" r="22" style="fill:var(--ye);opacity:.92"/></g>
+<g class="moon"><path d="M96 62a25 25 0 1 0 0 44a20 20 0 0 1 0-44z" style="fill:#ece8d6"/></g>
+<g class="stars" id="stars"></g>
+<g class="cloud" style="animation-delay:-10s"><path class="zf" d="M0 34C0 22 10 16 22 20C26 6 50 4 56 20C70 16 82 26 78 34Z"/></g>
+<g class="cloud" style="animation-delay:-48s;opacity:.8"><path class="zf" d="M0 30C0 20 8 14 18 18C22 6 42 4 48 18C60 14 70 22 66 30Z" transform="translate(0 28)"/></g>
+<line class="zl" x1="20" y1="440" x2="1100" y2="440"/>
+<g class="sway"><path class="zl" d="M62 440V376"/><circle cx="62" cy="352" r="26" class="tre"/><circle cx="42" cy="376" r="18" class="tre"/><circle cx="82" cy="374" r="19" class="tre"/></g>
+</g>
+<!-- дом -->
+<rect class="zf" x="650" y="84" width="26" height="44"/>
+<g id="smoke"><circle class="smk" cx="663" cy="80" r="7"/><circle class="smk" style="animation-delay:-1.7s" cx="663" cy="80" r="7"/><circle class="smk" style="animation-delay:-3.4s" cx="663" cy="80" r="7"/></g>
+<polygon class="zf" points="110,172 460,56 810,172"/>
+<rect class="zf" x="140" y="170" width="640" height="270"/>
+<path class="zl" d="M500 170V246"/>
+<!-- окно гостиной -->
+<rect class="zf" x="190" y="232" width="92" height="84" rx="3"/><path class="zl" d="M236 232v84M190 274h92"/>
+<polygon class="shaft" points="190,316 282,316 352,440 150,440"/>
+<path class="zc" d="M190 232q14 40 0 84h16q-10-44 0-84z"/><path class="zc" style="animation-delay:-2s" d="M282 232q-14 40 0 84h-16q10-44 0-84z"/>
+<g class="sway2"><path class="zf" d="M513 440l4-22h18l4 22z"/><path class="lf" d="M526 418q-14-26-4-44"/><path class="lf" d="M526 418q4-30 18-40"/><path class="lf" d="M526 418q-24-10-28-26"/></g>
+<!-- диван и картина -->
+<rect class="zf" x="370" y="226" width="76" height="52" rx="3"/><path class="zl" d="M378 270l18-20 14 14 12-10 16 16"/><circle cx="426" cy="241" r="4" class="zl"/>
+<rect class="zf" x="334" y="352" width="26" height="88" rx="10"/><rect class="zf" x="334" y="392" width="156" height="48" rx="10"/><rect class="zf" x="468" y="376" width="22" height="64" rx="9"/>
+<!-- окно спальни -->
+<rect class="zf" x="610" y="222" width="70" height="64" rx="3"/><path class="zl" d="M645 222v64M610 254h70"/>
+<!-- кровать и тумба -->
+<path class="zl" d="M596 440v-10M754 440v-10"/><rect class="zf" x="590" y="404" width="170" height="26" rx="3"/><rect class="zf" x="594" y="384" width="162" height="22" rx="8"/><rect class="zf" x="758" y="352" width="10" height="88" rx="4"/><ellipse class="zf" cx="728" cy="378" rx="22" ry="8"/>
+<rect class="zf" x="548" y="404" width="34" height="36" rx="2"/><path class="zl" d="M565 404v-14"/><path class="zf" d="M553 390l8-22h12l8 22z"/>
+<!-- ночь -->
+<rect class="nov" x="141" y="171" width="638" height="268" style="fill:#040716"/>
+<circle class="glwl" cx="565" cy="378" r="120" fill="url(#zg)"/>
+<g class="pth" id="pth"></g>
+<rect class="alr" x="141" y="171" width="359" height="268"/>
+<!-- техника -->
+<polygon class="cone" points="440,214 152,284 152,440 420,440" fill="url(#zcg)"/>
+<g clip-path="url(#zcone)"><rect class="scan" x="152" y="170" width="2.5" height="272"/></g>
+<path class="flow" d="M474 170V140"/><path class="flow" d="M536 190V150Q536 116 506 116"/><path class="flow" d="M770 236V196H548"/><path class="flow" d="M580 184V202H548"/>
+<g><rect class="zf" x="414" y="94" width="92" height="44" rx="6"/><rect class="zl" x="428" y="104" width="24" height="24" rx="3"/><path class="zl" d="M462 106h30M462 116h30M462 126h18"/><circle class="zled" cx="496" cy="128" r="2.4"/><text class="zt" x="460" y="87" text-anchor="middle">RISK ENGINE</text></g>
+<path class="zl" d="M474 170L470 192"/><circle class="zf" cx="470" cy="194" r="3"/>
+<g transform="translate(466 200) rotate(-30)"><rect class="zf" x="-24" y="-10" width="40" height="20" rx="5"/><circle class="zf" cx="-26" cy="0" r="8"/><circle cx="-26" cy="0" r="3.2" style="fill:var(--ac)"/><circle class="zled camled" cx="10" cy="-4" r="2.2"/></g>
+<text class="zt" x="456" y="184" text-anchor="end">CAMERA</text>
+<g><rect class="zf" x="510" y="190" width="38" height="24" rx="4"/><circle class="zled" cx="518" cy="198" r="2.2"/><path class="zl" d="M526 206h14"/><path class="wf" d="M521 184q8-7 16 0"/><path class="wf b" d="M517 178q12-11 24 0"/><text class="zt" x="529" y="231" text-anchor="middle">ESP32</text></g>
+<path class="zf" d="M568 170a12 12 0 0 0 24 0z"/><text class="zt" x="580" y="222" text-anchor="middle">PIR</text>
+<g clip-path="url(#zbed)"><circle class="zrp" cx="770" cy="252" r="6"/><circle class="zrp" style="animation-delay:-1.1s" cx="770" cy="252" r="6"/><circle class="zrp" style="animation-delay:-2.2s" cx="770" cy="252" r="6"/></g>
+<rect class="zf" x="764" y="236" width="12" height="32" rx="3"/><text class="zt" x="774" y="288" text-anchor="end">mmWave</text>
+<circle class="zf" cx="300" cy="178" r="5"/><text class="zt" x="300" y="198" text-anchor="middle">BH1750</text><text class="zt" id="lux" x="300" y="213" text-anchor="middle" style="fill:var(--tx);letter-spacing:.06em;font-size:11px">430 lx</text>
+<g class="sosb"><circle class="ring" cx="152" cy="328" r="8"/><circle class="btnc" cx="152" cy="328" r="8"/><text class="zt" x="146" y="306" style="fill:var(--re)">SOS</text></g>
+<!-- человек -->
+<g id="hpp" class="zp"></g>
+<g class="zb"><rect id="hbx" rx="4"/><text id="hbt" class="zt"></text></g>
+<path class="blanket" d="M600 384h112v14h-112z"/>
+<!-- вопрос ИИ, ответ, браслет на столике -->
+<g class="brtab"><ellipse class="zf" cx="479" cy="372" rx="13" ry="5"/><circle cx="479" cy="372" r="3" style="fill:var(--re)"/><text class="zt" x="479" y="358" text-anchor="middle" data-t="BRACELET|BRACELET|ARMBAND"></text></g>
+<g class="ask"><path class="bub" d="M192 318H444a14 14 0 0 1 14 14V360a14 14 0 0 1-14 14H262L244 392L238 374H192a14 14 0 0 1-14-14V332a14 14 0 0 1 14-14Z"/>
+<g class="spk"><path d="M196 340h6l9-8v28l-9-8h-6z" style="fill:var(--ac)"/><path class="sw1" d="M218 338q5 8 0 16"/><path class="sw2" d="M224 333q9 13 0 26"/></g>
+<text id="ask1" class="bt" x="242" y="351"></text>
+<g transform="translate(430 346)"><circle class="trk" r="15"/><circle class="trv" id="askr" r="15" transform="rotate(-90)"/><text id="askn" class="bt" y="5" text-anchor="middle" style="font-size:13px">15</text></g></g>
+<g class="say"><path class="bub ok" d="M184 292H336a14 14 0 0 1 14 14V320a14 14 0 0 1-14 14H214L196 352L190 334H184a14 14 0 0 1-14-14V306a14 14 0 0 1 14-14Z"/><text id="say1" class="bt" x="260" y="318" text-anchor="middle"></text></g>
+<!-- телефон -->
+<g class="phone"><rect class="zf" x="822" y="150" width="278" height="290" rx="24"/><rect class="zl" x="940" y="160" width="42" height="6" rx="3"/><text class="zt" x="842" y="192">SAFEHOME</text><circle class="zled" cx="1078" cy="188" r="3.5"/>
+<g class="pn n1"><rect x="834" y="204" width="254" height="128" rx="14" style="fill:#d23a4b"/><text id="s1" class="nt b" x="848" y="228"></text><text id="s2" class="nt" x="848" y="250"></text><text id="s3" class="nt s" x="848" y="269"></text><text id="s4" class="nt s" x="848" y="287"></text><text id="s5" class="nt b2" x="848" y="314"></text></g>
+<g class="pn n2"><rect x="834" y="344" width="254" height="84" rx="14" style="fill:#2c5de5"/><text id="c1" class="nt b" x="848" y="368"></text><text id="c2" class="nt s" x="848" y="388"></text><text id="c3" class="nt b2" x="848" y="410"></text></g></g>
+<!-- сирена -->
+<g class="siren"><circle cx="460" cy="48" r="7" style="fill:var(--re)"/><path class="zl" style="stroke:var(--re)" d="M460 34v-8M443 40l-6-6M477 40l6-6M438 54h-8M482 54h8"/></g>
+</svg></div>
+<div class="mbot"><div class="lv mh" id="mh"><div class="r1"><span data-t="Risk Engine|Risk Engine"></span><span id="mpose">STANDING</span></div><div class="r2"><i class="dot"></i><span id="mst">NORMAL</span><b id="mrk">8</b></div><div class="rk"><i id="mbar"></i></div><div class="r3"><span class="hrt"><i class="hrb"></i> <b id="mbpm">72</b> bpm</span><span id="mbr"></span></div></div>
+<div class="mlog" id="mlog"></div></div></div>
+<div class="mtabs" id="mtabs"></div></div></section>
+
+<section id="story"><div class="k rv" data-t="История|Story"></div><h2 class="sp" data-t="От спокойствия <em>до помощи.</em>|From calm <em>to help.</em>"></h2>
+<div class="sty rv" id="sty"><div class="stg" id="stg"><div class="gl"><i></i><span id="gt">NORMAL</span></div></div>
+<div class="stc"><div class="sls" id="sls"></div>
+<div class="ctl"><button class="cb mg" id="sprev" aria-label="Previous"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M19 12H5M11 6l-6 6 6 6"/></svg></button><span class="cnt" id="scnt"></span><button class="cb mg" id="snext" aria-label="Next"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></button></div>
+<div class="seg" id="seg"></div><p class="hint" data-t="Кнопки, клавиши ← → или свайп по фото.|Use the buttons, the ← → keys, or swipe the photo."></p></div></div></section>
+
+<section id="cvs"><div class="two"><div><div class="k rv" data-t="Компьютерное зрение|Computer vision"></div><h2 class="sp" data-t="Видит позу, <em>не лицо.</em>|It sees posture, <em>not faces.</em>"></h2><div class="chips rv" id="chips"><span data-s="STANDING">STANDING</span><span data-s="SITTING">SITTING</span><span data-s="LYING">LYING</span><span class="r" data-s="FALL">FALL</span><span class="r" data-s="NO MOVEMENT">NO MOVEMENT</span></div><div class="fm rv">Ratio = <span class="fr"><u>Width</u><u>Height</u></span></div><p class="rv" data-t="33 точки тела, пропорции, скорость центра масс и таймер неподвижности.|33 body points, proportions, centre-of-mass speed and an immobility timer."></p></div>
+<div class="cvc rv" id="cvc"><button class="fsb" type="button" aria-label="Fullscreen"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path class="ex" d="M9 4H4v5M15 4h5v5M9 20H4v-5M15 20h5v-5"/><path class="co" d="M4 9h5V4M20 9h-5V4M4 15h5v5M20 15h-5v5"/></svg></button><button class="psb" type="button" aria-label="Pause"><svg viewBox="0 0 24 24" fill="currentColor"><path class="pa" d="M7 5h3.4v14H7zM13.6 5H17v14h-3.4z"/><path class="pl" d="M8 5l11 7-11 7z"/></svg></button><svg viewBox="0 0 480 340" role="img" aria-label="Pose detection">
+<defs><pattern id="zdots" width="22" height="22" patternUnits="userSpaceOnUse"><circle cx="1.5" cy="1.5" r="1" style="fill:var(--ln2)"/></pattern></defs>
+<rect width="480" height="340" fill="url(#zdots)" opacity=".55"/>
+<path class="zl" d="M0 292H480"/>
+<rect class="zf" x="236" y="236" width="150" height="56" rx="10"/><rect class="zf" x="236" y="206" width="22" height="86" rx="10"/>
+<rect class="zf" x="332" y="70" width="90" height="74" rx="3"/><path class="zl" d="M377 70v74M332 107h90"/>
+<g id="cvp" class="zk"></g>
+<g class="cvbox"><rect id="cvbx" rx="3"/><text id="cvbt" class="zt"></text></g>
+<path class="zl" style="stroke:var(--ln2)" d="M16 44V16h28M436 16h28v28M464 296v28h-28M44 324H16v-28"/>
+<circle class="zled" style="fill:var(--re)" cx="36" cy="36" r="4"/><text class="zt" x="48" y="40">LIVE · LOCAL</text>
+<text class="zt" x="446" y="40" text-anchor="end">POSE · 33 PTS</text>
+</svg>
+<div class="cvr"><span>Width / Height = <b id="cvr">0.20</b></span><span id="cvst">STANDING</span></div></div></div>
+<div class="loc rv lc"><div><div class="k" style="color:var(--gr)" data-t="Приватность по умолчанию|Privacy by design|Datenschutz von Anfang an"></div><h3>LOCAL FIRST</h3><p data-t="Фото и видео человека никуда не отправляются. Кадр обрабатывается на Raspberry Pi 5 и сразу превращается в «скелет» из 33 точек. Наружу уходят только имя, возраст, адрес, поза и — если надет браслет — пульс. Внешность и одежда не покидают устройство. Камера смотрит на демонстрационную зону гостиной — не на спальню.|No photo or video of the person is sent anywhere. The frame is processed on the Raspberry Pi 5 and instantly turned into a 33-point «skeleton». Only the name, age, address, pose and — if the bracelet is worn — the pulse leave the device. Appearance and clothing never do. The camera covers the living-room demo zone — not the bedroom.|Kein Foto und kein Video der Person wird irgendwohin gesendet. Das Bild wird auf dem Raspberry Pi 5 verarbeitet und sofort in ein 33-Punkte-«Skelett» umgewandelt. Nur Name, Alter, Adresse, Haltung und — wenn das Armband getragen wird — der Puls verlassen das Gerät. Aussehen und Kleidung nie. Die Kamera erfasst nur die Wohnzimmer-Demozone — nicht das Schlafzimmer."></p>
+<div class="pv2"><div class="ok"><h4 data-t="Передаётся|Sent|Wird gesendet"></h4><ul><li data-t="Имя жильца|Resident's name|Name der Bewohnerin / des Bewohners"></li><li data-t="Возраст и адрес|Age and address|Alter und Adresse"></li><li data-t="Поза: «сканер тела», 33 точки|Pose: «body scan», 33 points|Haltung: «Körperscan», 33 Punkte"></li><li data-t="Пульс — только если браслет надет|Pulse — only if the bracelet is worn|Puls — nur wenn das Armband getragen wird"></li><li data-t="Время и комната|Time and room|Zeit und Raum"></li></ul></div>
+<div class="no"><h4 data-t="Никогда не передаётся|Never sent|Wird nie gesendet"></h4><ul><li data-t="Фото и видео|Photos and video|Fotos und Video"></li><li data-t="Лицо|Face|Gesicht"></li><li data-t="Внешность|Appearance|Aussehen"></li><li data-t="Одежда|Clothing|Kleidung"></li></ul></div></div></div>
+<svg viewBox="0 0 560 270" role="img" aria-label="Only data leaves the device, never the image"><g>
+<rect class="zf" x="10" y="40" width="150" height="150" rx="14"/><text class="zt" x="20" y="30">CAMERA FRAME</text>
+<circle cx="85" cy="78" r="15" style="fill:var(--mu);opacity:.55"/><rect x="62" y="98" width="46" height="46" rx="12" style="fill:var(--ac);opacity:.55"/><rect x="66" y="142" width="16" height="40" rx="6" style="fill:var(--mu);opacity:.45"/><rect x="88" y="142" width="16" height="40" rx="6" style="fill:var(--mu);opacity:.45"/>
+<path class="flow g" d="M164 115H214"/>
+<rect class="zf" x="218" y="60" width="140" height="110" rx="16" style="stroke:var(--gr)"/><text class="zt" x="288" y="80" text-anchor="middle" style="fill:var(--tx)">RASPBERRY PI 5</text>
+<g class="skg" style="stroke:var(--gr);fill:none;stroke-width:2.2;stroke-linecap:round"><circle cx="288" cy="102" r="7"/><path d="M288 109V136M288 116l-12 12M288 116l12 12M288 136l-10 22M288 136l10 22"/></g>
+<text class="zt" x="288" y="186" text-anchor="middle" style="fill:var(--gr)">SKELETON ONLY</text>
+<path class="flow g" d="M362 115H430"/>
+<rect class="zf" x="434" y="40" width="108" height="150" rx="18"/><rect x="444" y="62" width="88" height="22" rx="6" style="fill:var(--re)"/><rect x="444" y="92" width="88" height="22" rx="6" style="fill:var(--ac);opacity:.8"/><rect x="444" y="122" width="88" height="22" rx="6" style="fill:var(--gr);opacity:.8"/><text class="zt" x="488" y="30" text-anchor="middle">DATA</text><text class="zt" x="488" y="210" text-anchor="middle">NAME · AGE · ADDRESS</text><text class="zt" x="488" y="226" text-anchor="middle">POSE · PULSE</text>
+<path class="zl" style="stroke:var(--re);stroke-dasharray:4 6" d="M85 192V240H222"/>
+<path class="zf" d="M262 252h70a20 20 0 0 0 0-40a26 26 0 0 0-48-6a22 22 0 0 0-22 46z" style="opacity:.5"/><path class="zl" style="stroke:var(--re);stroke-width:2.6" d="M286 218l26 28M312 218l-26 28"/>
+<text class="zt" x="346" y="230" style="fill:var(--re)">PHOTO · VIDEO</text><text class="zt" x="346" y="246" style="fill:var(--re)">FACE · CLOTHES</text>
+</g></svg></div></section>
+
+<section id="physics"><div class="k rv" data-t="Физика|Physics"></div><h2 class="sp" data-t="Датчики — это <em>физика</em> в действии.|Sensors are <em>physics</em> in action."></h2>
+<div class="cards">
+<div class="cd rv"><span class="n">01 · MLX90614</span><svg class="cic" viewBox="0 0 64 64"><path class="s wv" d="M4 36q7-18 14 0t14 0t14 0t14 0"/><circle class="s" cx="32" cy="12" r="5"/><path class="s" d="M32 2v2M22 6l2 2M42 6l-2 2"/></svg><h3 data-t="Инфракрасное<br>излучение|Infrared<br>radiation"></h3><p data-t="Любое тело выше абсолютного нуля излучает электромагнитные волны. Датчик принимает это излучение и оценивает температуру без контакта.|Every body above absolute zero emits electromagnetic waves. The sensor detects this radiation and estimates temperature without contact."></p><p class="sm" data-t="Индикатор, а не медицинский термометр.|An indicator, not a medical thermometer."></p></div>
+<div class="cd rv"><span class="n">02 · LD2410</span><svg class="cic" viewBox="0 0 64 64"><circle class="d" cx="32" cy="32" r="3.6"/><circle class="pls" cx="32" cy="32" r="14"/><circle class="pls b" cx="32" cy="32" r="14"/><path class="s" d="M32 6v8M32 50v8M6 32h8M50 32h8"/></svg><h3 data-t="Радиоволны<br>mmWave|Radio waves<br>mmWave"></h3><p data-t="Датчик излучает радиосигнал. Изменение отражённого сигнала выдаёт присутствие человека, даже если он почти не двигается.|The sensor emits a radio signal. Changes in the reflected signal reveal a person's presence even when they barely move."></p><p class="sm" data-t="Там, где PIR уже ничего не видит.|Where a PIR sensor sees nothing."></p></div>
+<div class="cd rv"><span class="n">03 · BH1750</span><svg class="cic" viewBox="0 0 64 64"><g class="spr"><path class="s" d="M32 4v8M32 52v8M4 32h8M52 32h8M12 12l6 6M46 46l6 6M52 12l-6 6M12 52l6 -6"/></g><circle class="s" cx="32" cy="32" r="10"/><circle class="d" style="fill:var(--ye)" cx="32" cy="32" r="4"/></svg><h3 data-t="Свет и<br>освещённость|Light and<br>illuminance"></h3><p data-t="Ниже 10 лк система понимает, что наступила ночь, и мягко включает подсветку пути.|Below 10 lx the system knows it is night and gently lights the path."></p><div class="fm" style="font-size:30px;margin:22px 0 4px">E = <span class="fr"><u>Φ</u><u>A</u></span></div><p class="sm" data-t="E — освещённость, Φ — световой поток, A — площадь.|E — illuminance, Φ — luminous flux, A — area."></p></div>
+<div class="cd rv"><span class="n">04 · BME280</span><svg class="cic" viewBox="0 0 64 64"><g class="bob"><path class="s" d="M24 8c6 10 11 16 11 23a11 11 0 0 1-22 0c0-7 5-13 11-23z"/></g><rect class="s" x="46" y="12" width="8" height="34" rx="4"/><rect class="fill" x="48" y="14" width="4" height="30" rx="2"/><circle class="s" cx="50" cy="50" r="6"/></svg><h3 data-t="Микроклимат|Microclimate"></h3><p data-t="Температура, влажность и давление воздуха — контекст, который помогает оценить ситуацию в доме.|Air temperature, humidity and pressure — context that helps assess the situation at home."></p><p class="sm" data-t="Данные сопоставляются с поведением человека.|Readings are compared with the resident's behaviour."></p></div></div></section>
+
+<section id="risk"><div class="k rv" data-t="Risk Engine|Risk Engine"></div><h2 class="sp" data-t="Решает не один датчик.|No single sensor <em>decides.</em>"></h2><div class="fm rv">Risk = w<sub>1</sub>F + w<sub>2</sub>M + w<sub>3</sub>T + w<sub>4</sub>S + w<sub>5</sub>A</div>
+<div class="calc"><div id="opts" class="rv"></div><div class="gauge rv"><svg viewBox="0 0 120 120"><circle class="t" cx="60" cy="60" r="52"/><circle class="v" id="gv" cx="60" cy="60" r="52"/></svg><div><b id="gs">0</b><span id="gl">NORMAL</span></div></div></div>
+<p class="rv" style="margin-top:6vh;font-size:13px;letter-spacing:.14em">NORMAL 0–29 &nbsp;·&nbsp; ATTENTION 30–59 &nbsp;·&nbsp; EMERGENCY 60+</p></section>
+
+<section id="scn"><div class="k rv" data-t="Демонстрация|Demonstration"></div><h2 class="sp" data-t="Четыре сцены, <em>одна идея.</em>|Four scenes, <em>one idea.</em>"></h2>
+<div class="pf" id="pf"></div>
+<div class="dh"><div class="k rv" data-t="Подсветка|Lighting|Beleuchtung"></div><h3 class="rv" data-t="Свет следует <em>за солнцем.</em>|The light follows <em>the sun.</em>|Das Licht folgt <em>der Sonne.</em>"></h3>
+<p class="rv" data-t="Двигайте время: днём на небе солнце, ночью — луна. Когда освещённость BH1750 падает ниже 10 лк, SAFEHOME сам включает подсветку дома и пути, а утром выключает.|Move the time: the sun rules the day, the moon rules the night. When the BH1750 reading drops below 10 lx, SAFEHOME switches the house and path lighting on by itself — and off again in the morning.|Verschieben Sie die Zeit: Tagsüber steht die Sonne am Himmel, nachts der Mond. Sinkt der BH1750-Wert unter 10 lx, schaltet SAFEHOME die Haus- und Wegbeleuchtung selbst ein — und morgens wieder aus."></p>
+<div class="dayc rv" id="dayc"><button class="fsb" type="button" aria-label="Fullscreen"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path class="ex" d="M9 4H4v5M15 4h5v5M9 20H4v-5M15 20h5v-5"/><path class="co" d="M4 9h5V4M20 9h-5V4M4 15h5v5M20 15h-5v5"/></svg></button><button class="psb" type="button" aria-label="Pause"><svg viewBox="0 0 24 24" fill="currentColor"><path class="pa" d="M7 5h3.4v14H7zM13.6 5H17v14h-3.4z"/><path class="pl" d="M8 5l11 7-11 7z"/></svg></button>
+<div class="dsv"><svg id="dh" viewBox="0 0 760 560" preserveAspectRatio="xMidYMax slice" role="img" aria-label="House with day and night lighting">
+<defs><linearGradient id="dsk" x1="0" y1="0" x2="0" y2="1"><stop id="dk1" offset="0" stop-color="#4f9cf0"/><stop id="dk2" offset="1" stop-color="#bfe0fa"/></linearGradient>
+<radialGradient id="dwg"><stop offset="0" stop-color="#ffd27a" stop-opacity=".75"/><stop offset="1" stop-color="#ffd27a" stop-opacity="0"/></radialGradient></defs>
+<rect width="760" height="560" fill="url(#dsk)"/>
+<g class="stars2" id="dstars"></g>
+<g id="dsun"><g class="rays" id="drays"></g><circle r="24" style="fill:#ffd36b"/></g>
+<g id="dmoon"><path d="M12 -26a27 27 0 1 0 0 50a21 21 0 0 1 0 -50z" style="fill:#ece8d6"/></g>
+<g class="cloud" id="dcl1" style="animation-delay:-14s"><path d="M0 34C0 22 10 16 22 20C26 6 50 4 56 20C70 16 82 26 78 34Z" fill="#fff" opacity=".85"/></g>
+<g class="cloud" id="dcl2" style="animation-delay:-52s"><path d="M0 30C0 20 8 14 18 18C22 6 42 4 48 18C60 14 70 22 66 30Z" transform="translate(0 40)" fill="#fff" opacity=".7"/></g>
+<g transform="translate(0 120)"><path d="M0 372Q120 330 240 366T520 360T760 352V440H0Z" id="dhill" style="fill:#5c8a63"/>
+<rect id="dgr" y="372" width="760" height="68" style="fill:#3f7a52"/>
+<g id="dhs">
+<g class="wg"><ellipse cx="285" cy="286" rx="110" ry="80" fill="url(#dwg)"/><ellipse cx="475" cy="286" rx="110" ry="80" fill="url(#dwg)"/><ellipse cx="380" cy="190" rx="70" ry="60" fill="url(#dwg)"/></g>
+<g id="dbody"><rect x="452" y="170" width="26" height="62" style="fill:#7a6f67"/>
+<polygon points="214,246 380,148 546,246" style="fill:#8b3f43" stroke="#0004" stroke-width="2"/>
+<rect x="240" y="246" width="280" height="126" style="fill:#e9dfce" stroke="#0003" stroke-width="2"/>
+<rect x="352" y="312" width="56" height="60" rx="3" style="fill:#5b4033"/><circle cx="398" cy="344" r="3" fill="#ffd36b"/></g>
+<rect class="wn" x="262" y="276" width="62" height="52" rx="3"/><path d="M293 276v52M262 302h62" stroke="#0006" stroke-width="2"/>
+<rect class="wn" x="436" y="276" width="62" height="52" rx="3"/><path d="M467 276v52M436 302h62" stroke="#0006" stroke-width="2"/>
+<circle class="wn" cx="380" cy="212" r="22"/><path d="M380 190v44M358 212h44" stroke="#0006" stroke-width="2"/>
+<rect x="373" y="294" width="14" height="8" rx="3" class="gl2"/>
+</g>
+<g class="ptl" id="dpth"></g>
+<g id="dlamps"></g>
+<g class="sway" id="dtree"><rect x="108" y="330" width="9" height="46" style="fill:#5b4033"/><circle cx="112" cy="316" r="34" style="fill:#2f6b46"/><circle cx="92" cy="338" r="22" style="fill:#2f6b46"/><circle cx="134" cy="336" r="22" style="fill:#2f6b46"/></g>
+<g id="dsens"><rect x="524" y="262" width="44" height="24" rx="5" fill="#0c1126" stroke="#fff6" stroke-width="1.4"/><text x="546" y="278" text-anchor="middle" id="dsl" style="font:600 10px 'Helvetica Neue',Arial,sans-serif;fill:#fff;letter-spacing:.04em">3 lx</text><path d="M546 262v-12" stroke="#fff8" stroke-width="2"/><circle cx="546" cy="248" r="4" fill="#ffd36b"/><text x="546" y="304" text-anchor="middle" style="font:600 9px 'Helvetica Neue',Arial,sans-serif;letter-spacing:.16em;fill:#fff;opacity:.8">BH1750</text></g>
+</g>
+</svg></div>
+<div class="dayp"><div class="dk" data-t="24-часовые часы|24-hour clock|24-Stunden-Uhr"></div>
+<div class="dial"><svg viewBox="0 0 220 220" id="ddial"><defs><clipPath id="dcp"><circle cx="110" cy="110" r="90"/></clipPath></defs><circle cx="110" cy="110" r="90" fill="none" style="stroke:var(--ln2)" stroke-width="1.4"/><g clip-path="url(#dcp)"><rect x="20" y="20" width="180" height="90" style="fill:var(--ye)" opacity=".18"/><rect x="20" y="110" width="180" height="90" style="fill:var(--ac)" opacity=".14"/></g><g id="dtk"></g><g id="dhand"><line x1="110" y1="110" x2="110" y2="34" style="stroke:var(--tx)" stroke-width="2" stroke-linecap="round"/><circle cx="110" cy="26" r="9" id="dhb" style="fill:var(--ye)"/></g><circle cx="110" cy="110" r="4" style="fill:var(--tx)"/></svg>
+</div><div class="dtl"><b id="dtm">16:30</b><small id="dph">DAY</small></div>
+<div class="drow"><div class="dcell"><small data-t="Небо|Sky|Himmel"></small><b id="dsk2">☀</b></div><div class="dcell"><small data-t="Освещённость|Illuminance|Beleuchtungsstärke"></small><b><span id="dlx">430</span> lx</b></div></div>
+<div class="drow"><div class="dcell lt" id="dlt"><small data-t="Подсветка дома|House lighting|Hausbeleuchtung"></small><b id="dls">OFF</b></div><div class="dcell"><small data-t="Правило|Rule|Regel"></small><b>&lt; 10 lx</b></div></div>
+<input type="range" id="dsl2" min="0" max="1439" value="990" aria-label="time">
+<div class="dctl"><button type="button" id="dnow" data-t="Сейчас|Now|Jetzt"></button><button type="button" id="dsp" class="on">×1</button><button type="button" id="dsp3">×3</button></div>
+<p class="dnote" data-t="Время идёт само; можно перетащить ползунок. Датчик BH1750 измеряет свет, а не время: при пасмурном дне подсветка включится раньше.|Time runs by itself; drag the slider to jump. The BH1750 measures light, not time — on a gloomy day the lighting would start earlier.|Die Zeit läuft von selbst; ziehen Sie den Regler zum Springen. Der BH1750 misst Licht, nicht die Uhrzeit — an einem trüben Tag würde die Beleuchtung früher angehen."></p></div></div></div>
+</section>
+
+<section id="exp"><div class="k rv" data-t="Эксперимент|Experiment"></div><h2 class="sp" data-t="Снижает ли объединение датчиков <em>ложные тревоги?</em>|Does sensor fusion reduce <em>false alarms?</em>"></h2>
+<div class="two"><div><div class="big rv" id="rd">6×</div><p class="rv" id="wn" style="margin-top:20px"></p></div><div id="bars" class="rv"></div></div></section>
+
+<section id="limits"><div class="k rv" data-t="Границы и развитие|Limits and next steps"></div><h2 class="sp" data-t="Честно о границах, <em>и что дальше.</em>|Honest about limits, <em>and what comes next.</em>"></h2>
+<div class="two" style="margin-top:8vh"><div class="lst rv"><h4 data-t="Ограничения|Limitations"></h4><div id="lim"></div></div><div class="lst nx rv"><h4 data-t="Развитие|Future development"></h4><div id="nxt"></div></div></div></section>
+
+<section id="faq" class="vx">
+ <div class="k rv" data-t="Вопросы|Questions|Fragen"></div>
+ <h2 class="sp" data-t="Частые <em>вопросы.</em>|Frequent <em>questions.</em>|Häufige <em>Fragen.</em>"></h2>
+ <div class="v-qa" id="v-qa"></div>
+</section>
+
+<section id="team"><div class="k rv" data-t="Команда|Team"></div><h2 class="sp" data-t="Шесть человек, <em>один проект.</em>|Six people, <em>one project.</em>"></h2><div class="tm" id="tm"></div></section>
+
+<footer><h2 class="sp" data-t="Что, если ваш дом <em>мог бы заметить?</em>|What if your home <em>could notice?</em>"></h2><p class="rv" data-t="Технологии не должны заменять заботу. Они должны помогать нам проявлять её.|Technology should not replace care. It should help us provide it.|Technologie soll Fürsorge nicht ersetzen. Sie soll uns helfen, sie zu leisten."></p><div class="fw rv">SAFEHOME</div>
+<div class="fb"><div class="fl"><img class="v-d" id="fi" alt="SAFEHOME — A Smart Home That Cares"><img class="v-l" id="fil" alt="SAFEHOME — A Smart Home That Cares"><span id="ev2"></span></div><span data-t="Прототип вспомогательной системы, не медицинское устройство.|An assistive prototype, not a medical device."></span><a class="btn mg" href="#top" aria-label="Top">↑</a></div></footer>
+
+<script src="index.js?v=2"></script></body></html>
