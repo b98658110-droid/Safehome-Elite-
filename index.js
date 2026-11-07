@@ -9,10 +9,10 @@ const CONFIG={
  /* формат: ['Имя на русском|Name in English','Роль на русском|Role in English'] */
  team:[
   ['Холматов Фаррух|Kholmatov Farrukh','Участник команды|Team member'],
-  ['Хайруллаев Билолдн|Xayrullaev Biloldn','Участник команды|Team member'],
+  ['Хайруллаев Билолдин|Xayrullaev Biloldin','Участник команды|Team member'],
   ['Абдулвосидов Аббосбек|Abdulvosidov Abbosbek','Участник команды|Team member'],
   ['Зокиржонов Амир|Zokirjonov Amir','Участник команды|Team member'],
-  ['Сайдуллаев Бекзод|Saydullayev Bekzod','Участник команды|Team member'],
+  ['Сайдуллаев Бехзод|Saydullayev Bexzod','Участник команды|Team member'],
   ['Фазлидинов Мухаммад Амин|Fazlidinov Muhammad Amin','Участник команды|Team member']
  ],
  trials:30,
