@@ -181,25 +181,6 @@ const noReply=(T,pre)=>[
  [T+ASK+3,()=>{note('call');mlog('Семья прочитала · может позвонить или вызвать 103|Family read it · can call or dial 103|Familie hat gelesen · kann anrufen oder 103 wählen')}],
  [T+ASK+.6,()=>mlog('Включены красный свет и сирена|Red light and siren are on|Rotes Licht und Sirene sind an')]];
 const SC=[
-{n:'Обычный день|A normal day|Ein normaler Tag',d:'Человек ходит и отдыхает — риск низкий.|The resident walks and rests — risk stays low.|Die Person geht und ruht sich aus — das Risiko bleibt niedrig.',night:0,dur:17.5,ev:()=>[
- [0,()=>{mp.snap('stand',215,0,1);brace(1);pulse(74);hud(0,8,'STANDING');lux(430);mlog('Дом в покое · всё в норме|Home at rest · all normal|Haus in Ruhe · alles in Ordnung')}],
- [.8,()=>{mp.go(400,3.3);pulse(80)}],
- [2.4,()=>mlog('mmWave + PIR: присутствие подтверждено|mmWave + PIR: presence confirmed|mmWave + PIR: Anwesenheit bestätigt')],
- [4.3,()=>{mp.set('sit',1.3);pulse(70);hud(0,6,'SITTING');mlog('Поза: SITTING|Pose: SITTING|Haltung: SITTING')}],
- [9,()=>mlog('Неподвижность — норма, человек отдыхает|Stillness is normal — the resident is resting|Ruhe ist normal — die Person ruht sich aus')],
- [11.2,()=>{mp.set('stand',1.2);pulse(76);hud(0,8,'STANDING');mlog('Поза: STANDING|Pose: STANDING|Haltung: STANDING')}],
- [12.6,()=>mp.go(215,3.6)]]},
-{n:'Ночь|Night|Nacht',d:'Освещённость ниже 10 лк — подсветка пути.|Below 10 lx the path is lit gently.|Unter 10 lx wird der Weg sanft beleuchtet.',night:1,dur:21.5,ev:()=>[
- [0,()=>{mp.snap('lie',665,56,1);brace(1);pulse(56);cls('is-bed',1);hud(0,5,'SLEEPING');lux(3);mlog('Ночь · человек спит|Night · the resident sleeps|Nacht · die Person schläft')}],
- [3,()=>{mp.set('sitbed',1.4);pulse(66);cls('is-lamp',1);hud(0,10,'WAKING UP');mlog('mmWave: движение в спальне|mmWave: movement in the bedroom|mmWave: Bewegung im Schlafzimmer')}],
- [5,()=>{mp.set('stand',1.4);mp.go(612,1.4);mp.tween('y',0,1.4);cls('is-bed',0);hud(0,12,'STANDING');pulse(74)}],
- [5.8,()=>{cls('is-path',1);mlog('BH1750 < 10 лк → подсветка пути|BH1750 < 10 lx → path light ON|BH1750 < 10 lx → Wegbeleuchtung AN')}],
- [6.6,()=>mp.go(300,4.6)],
- [11.8,()=>mlog('Идёт в гостиную · риск низкий|Walking to the living room · risk is low|Geht ins Wohnzimmer · Risiko niedrig')],
- [12.4,()=>mp.go(612,4.6)],
- [17.2,()=>{mp.set('sitbed',1.2);mp.go(665,1.2);mp.tween('y',56,1.2);hud(0,8,'SITTING');pulse(66)}],
- [18.6,()=>{mp.set('lie',1.4);hud(0,5,'SLEEPING');pulse(56);cls('is-bed',1)}],
- [20,()=>{cls('is-path',0);cls('is-lamp',0);mlog('Подсветка выключена|Lights off|Licht aus')}]]},
 {n:'Падение: нет ответа|Fall: no reply|Sturz: keine Antwort',d:`Система спрашивает, ждёт ${ASK} с, затем сирена и уведомление семье с ФИО, возрастом, адресом и пульсом.|The system asks, waits ${ASK} s, then a siren and a notification to the family with name, age, address and pulse.|Das System fragt, wartet ${ASK} s, dann Sirene und Benachrichtigung an die Familie mit Name, Alter, Adresse und Puls.`,night:0,dur:7+ASK+9,ev:()=>[
  [0,()=>{mp.snap('stand',380,0,-1);brace(1);pulse(76);hud(0,8,'STANDING');lux(430);mlog('Человек распознан · STANDING|Person detected · STANDING|Person erkannt · STANDING')}],
  ...fallPre(),...noReply(7)]},
@@ -211,17 +192,6 @@ const SC=[
  [15,()=>{mp.set('stand',1.6);pulse(88);hud(0,8,'STANDING')}],
  [16.5,()=>sayOK(0)],
  [17,()=>mlog('Событие записано в журнал · семью не беспокоили|Event logged · the family was not disturbed|Ereignis protokolliert · Familie nicht gestört')]]},
-{n:'SOS на браслете|SOS on the bracelet|SOS am Armband',d:'Нажать можно, даже если рядом нет стационарной кнопки.|It works even when no wall button is nearby.|Funktioniert auch, wenn kein Wandtaster in der Nähe ist.',night:0,dur:17,ev:()=>[
- [0,()=>{mp.snap('sit',400,0,1);brace(1);pulse(72);hud(0,6,'SITTING');lux(430);mlog('Человек отдыхает на диване|The resident rests on the sofa|Die Person ruht auf dem Sofa')}],
- [3,()=>{mp.set('sitpress',.8);mlog('Нажата кнопка SOS на браслете|The SOS button on the bracelet is pressed|Die SOS-Taste am Armband wird gedrückt')}],
- [4.2,()=>{cls('is-sos',1);cls('is-alert',1);hud(2,100,'SOS');pulse(104);mlog(`SOS: браслет · приоритет 100 · ждать ${ASK} с не нужно|SOS: bracelet · priority 100 · no ${ASK} s wait|SOS: Armband · Priorität 100 · keine ${ASK} s Wartezeit`)}],
- [5.6,()=>{note('sms','sos');mlog('Уведомление семье: имя, возраст, адрес + пульс|Notification to family: name, age, address + pulse|Benachrichtigung an Familie: Name, Alter, Adresse + Puls')}],
- [7,()=>{note('call');mlog('Семья прочитала · может позвонить или вызвать 103|Family read it · can call or dial 103|Familie hat gelesen · kann anrufen oder 103 wählen')}],
- [12,()=>mp.set('sit',1)]]},
-{n:'Браслет снят|Bracelet off|Armband abgelegt',d:'Падение без браслета: уведомление семье уходит, но без пульса.|A fall without the bracelet: the family is notified, but without the pulse.|Sturz ohne Armband: Die Familie wird benachrichtigt, aber ohne Puls.',night:0,dur:7+ASK+9,ev:()=>[
- [0,()=>{mp.snap('stand',380,0,-1);brace(0);pulse(72);hud(0,8,'STANDING');lux(430);mlog('Браслет снят — лежит на подлокотнике|The bracelet is off — it lies on the armrest|Das Armband ist abgelegt — es liegt auf der Armlehne')}],
- ...fallPre(),...noReply(7),
- [7+ASK+1.3,()=>mlog('Браслет снят → пульс не передаётся|Bracelet off → the pulse is not sent|Armband ab → der Puls wird nicht gesendet')]]}
 ];
 const ALLC=['is-alert','is-sms','is-call','is-sos','is-hit','is-mmw','is-path','is-lamp','is-bed','is-ask','is-say','is-nobr'];
 function loadScene(i,man){M.s=i;M.man=man;M.clk=0;M.ei=0;M.logs=[];M.fd=0;M.nt=null;M.ak=null;ALLC.forEach(c=>cls(c,0));hsc.classList.toggle('n',!!SC[i].night);
