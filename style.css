@@ -6518,3 +6518,29 @@ html[lang=de] h1 {
 /* Продукт: в карточках версий оставляем комплект, умный дом и цену — без длинного списка ИИ */
 #versions .v-vers > * > h4:nth-of-type(2),
 #versions .v-vers > * > ul:nth-of-type(2){display:none!important}
+
+/* ===== Галерея прототипа ===== */
+.pg{display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:12px;margin-top:6vh}
+.pg-i{display:block;padding:0;border:1px solid var(--ln);background:var(--b2);aspect-ratio:4/3;overflow:hidden;cursor:zoom-in;border-radius:6px}
+.pg-i img{width:100%;height:100%;object-fit:cover;display:block;transition:transform .6s var(--e,ease),opacity .4s}
+.pg-i:hover img,.pg-i:focus-visible img{transform:scale(1.05)}
+.pg-i:focus-visible{outline:2px solid var(--ac);outline-offset:2px}
+.lb{position:fixed;inset:0;z-index:9999;background:rgb(0 0 0/.92);display:flex;align-items:center;justify-content:center;opacity:0;transition:opacity .3s}
+.lb.on{opacity:1}
+.lb[hidden]{display:none}
+.lb-img{max-width:calc(100vw - 180px);max-height:calc(100vh - 120px);object-fit:contain;border-radius:4px;box-shadow:0 20px 60px rgb(0 0 0/.5);user-select:none}
+.lb .cb{position:absolute;color:#fff;border-color:rgb(255 255 255/.35);background:rgb(0 0 0/.35)}
+.lb .cb:hover{background:#fff;color:#000;border-color:#fff}
+.lb-x{top:20px;right:20px}
+.lb-p{left:20px;top:50%;margin-top:-30px}
+.lb-n{right:20px;top:50%;margin-top:-30px}
+.lb-c{position:absolute;bottom:24px;left:50%;transform:translateX(-50%);color:rgb(255 255 255/.75);font-size:13px;letter-spacing:.2em;font-variant-numeric:tabular-nums}
+@media (max-width:700px){
+ .pg{grid-template-columns:repeat(2,1fr);gap:8px}
+ .lb-img{max-width:100vw;max-height:calc(100vh - 160px)}
+ .lb .cb{width:48px;height:48px}
+ .lb-x{top:12px;right:12px}
+ .lb-p,.lb-n{top:auto;bottom:12px;margin-top:0}
+ .lb-p{left:16px}.lb-n{right:16px}
+ .lb-c{bottom:28px}
+}
